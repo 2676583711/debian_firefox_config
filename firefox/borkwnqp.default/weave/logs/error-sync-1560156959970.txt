@@ -1,0 +1,528 @@
+1560154422460	Sync.Service	INFO	Loading Weave 1.62.0
+1560154422462	Sync.Engine.Clients	DEBUG	Engine constructed
+1560154422462	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1560154423088	Sync.Engine.Clients	DEBUG	SyncEngine initialized: clients
+1560154423095	Sync.Engine.Addons	DEBUG	Engine constructed
+1560154423170	Sync.Engine.Addons	DEBUG	SyncEngine initialized: addons
+1560154423189	Sync.Engine.Forms	DEBUG	Engine constructed
+1560154423201	Sync.Engine.Forms	DEBUG	SyncEngine initialized: forms
+1560154423205	Sync.Engine.History	DEBUG	Engine constructed
+1560154423281	Sync.Engine.History	DEBUG	SyncEngine initialized: history
+1560154423284	Sync.Engine.Passwords	DEBUG	Engine constructed
+1560154423286	Sync.Engine.Passwords	DEBUG	SyncEngine initialized: passwords
+1560154423289	Sync.Engine.Prefs	DEBUG	Engine constructed
+1560154423336	Sync.Engine.Prefs	DEBUG	SyncEngine initialized: prefs
+1560154423339	Sync.Engine.Tabs	DEBUG	Engine constructed
+1560154423359	Sync.Engine.Tabs	DEBUG	SyncEngine initialized: tabs
+1560154423360	Sync.Engine.Tabs	DEBUG	Resetting tabs last sync time
+1560154423362	Sync.Engine.Extension-Storage	DEBUG	Engine constructed
+1560154423378	Sync.Engine.Extension-Storage	DEBUG	SyncEngine initialized: extension-storage
+1560154423384	Sync.Engine.Bookmarks	DEBUG	Engine constructed
+1560154423398	Sync.Engine.Bookmarks	DEBUG	SyncEngine initialized: bookmarks
+1560154423398	Sync.Service	INFO	Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+1560154423402	Sync.AddonsReconciler	INFO	Registering as Add-on Manager listener.
+1560154423402	Sync.AddonsReconciler	DEBUG	Adding change listener.
+1560154423402	Sync.Engine.History.Tracker	INFO	Adding Places observer.
+1560154423406	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1560154424565	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1560154431406	Sync.SyncScheduler	DEBUG	Next sync in 3592594 ms. (why=startup)
+1560154555000	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1560154795859	addons.xpi	WARN	disabling legacy extension {19503e42-ca3c-4c27-b1e2-9cdb2170ee34}
+1560154795902	addons.xpi	WARN	Add-on tabtweak@mozillaonline.com is not compatible with application version.
+1560154796085	addons.xpi	WARN	disabling legacy extension {b676e3ff-cda7-4e0c-b2b8-74e4bb40a67a}
+1560156088344	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1560156936061	Sync.SyncScheduler	DEBUG	Global Score threshold hit, triggering sync.
+1560156936061	Sync.Service	DEBUG	User-Agent: Firefox/60.3.0 (Linux x86_64) FxSync/1.62.0.20181023221722.desktop
+1560156936062	Sync.Service	INFO	Starting sync at 2019-06-10 16:55:36 in browser session kv5UH15fzIbY
+1560156936062	Sync.Service	DEBUG	In sync: should login.
+1560156936062	Sync.Service	INFO	User logged in successfully - verifying login.
+1560156936063	Sync.BrowserIDManager	DEBUG	unlockAndVerifyAuthState already has (or can fetch) sync keys
+1560156936063	Sync.Status	DEBUG	Status.login: success.login => success.status_ok
+1560156936063	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1560156936063	Sync.Service	DEBUG	Fetching unlocked auth state returned success.status_ok
+1560156936064	Sync.BrowserIDManager	INFO	Getting keys
+1560156936064	Sync.BrowserIDManager	INFO	Getting an assertion from: https://token.services.mozilla.com/1.0/sync/1.5
+1560156936064	FirefoxAccounts	DEBUG	enter getAssertion()
+1560156936071	FirefoxAccounts	DEBUG	got keyPair
+1560156936071	FirefoxAccounts	DEBUG	getCertificateSigned: true true
+1560156936073	Services.Common.RESTRequest	TRACE	local time, offset: 1560156936072, 0
+1560156936074	Services.Common.RESTRequest	TRACE	hawk auth header: Hawk id="e3c15379ff07b1d4cfd67c86b0105669aedbcc727ec679f2086850ef9f3e73d7", ts="1560156936", nonce="KP07YjN6E3s=", hash="mngoH6YYz0LflucnXmZ87Jr6aRd5nsmbwCBQOZjbHHM=", mac="vrD00RS+Ak5czJZGMfnKdZz9mRu27yrfDxi1H8qjXeU="
+1560156936074	Services.Common.RESTRequest	DEBUG	POST request to https://api.accounts.firefox.com/v1/certificate/sign
+1560156936074	Services.Common.RESTRequest	TRACE	HTTP Header authorization: ***** (suppressed)
+1560156936074	Services.Common.RESTRequest	TRACE	HTTP Header content-type: application/json
+1560156936074	Services.Common.RESTRequest	TRACE	HTTP Header accept-language: zh-CN, zh, zh-TW, zh-HK, en-US, en
+1560156936074	Services.Common.RESTRequest	DEBUG	POST Length: 888
+1560156936074	Services.Common.RESTRequest	TRACE	POST Body: {"publicKey":{"algorithm":"DS","y":"E68EF5394459B36D01D0E70F5FF4D56017675A451192BF93DA3F2F9CCE54592EF8EC411E2B5CB4FE58987D0E23602028C7B72A9389C9C58DFFB3D90CBB3E63B5317BDC89D0C6FADDE6FA9D4612B76B9E2F6548ABE7DC8406917167191E284EEBD8A70EEBE4F04265D470109D21B6BF8C517E9CAB073EBCBB0C6AAFF4BB410EFB","p":"FF600483DB6ABFC5B45EAB78594B3533D550D9F1BF2A992A7A8DAA6DC34F8045AD4E6E0C429D334EEEAAEFD7E23D4810BE00E4CC1492CBA325BA81FF2D5A5B305A8D17EB3BF4A06A349D392E00D329744A5179380344E82A18C47933438F891E22AEEF812D69C8F75E326CB70EA000C3F776DFDBD604638C2EF717FC26D02E17","q":"E21E04F911D1ED7991008ECAAB3BF775984309C3","g":"C52A4A0FF3B7E61FDF1867CE84138369A6154F4AFA92966E3C827E25CFA6CF508B90E5DE419E1337E07A2E9E2A3CD5DEA704D175F8EBF6AF397D69E110B96AFB17C7A03259329E4829B0D03BBC7896B15B4ADE53E130858CC34D96269AA89041F409136C7242A38895C9D5BCCAD4F389AF1D7A4BD1398BD072DFFA896233397A"},"duration":21600000}
+1560156937137	Services.Common.RESTRequest	TRACE	onStartRequest: POST https://api.accounts.firefox.com/v1/certificate/sign
+1560156937137	Services.Common.RESTRequest	TRACE	Channel for POST https://api.accounts.firefox.com/v1/certificate/sign returned status code 0
+1560156937137	Services.Common.RESTRequest	DEBUG	POST https://api.accounts.firefox.com/v1/certificate/sign 200
+1560156937137	Services.Common.RESTRequest	TRACE	POST body: {"cert":"eyJhbGciOiJSUzI1NiJ9.eyJwdWJsaWMta2V5Ijp7ImFsZ29yaXRobSI6IkRTIiwieSI6IkU2OEVGNTM5NDQ1OUIzNkQwMUQwRTcwRjVGRjRENTYwMTc2NzVBNDUxMTkyQkY5M0RBM0YyRjlDQ0U1NDU5MkVGOEVDNDExRTJCNUNCNEZFNTg5ODdEMEUyMzYwMjAyOEM3QjcyQTkzODlDOUM1OERGRkIzRDkwQ0JCM0U2M0I1MzE3QkRDODlEMEM2RkFEREU2RkE5RDQ2MTJCNzZCOUUyRjY1NDhBQkU3REM4NDA2OTE3MTY3MTkxRTI4NEVFQkQ4QTcwRUVCRTRGMDQyNjVENDcwMTA5RDIxQjZCRjhDNTE3RTlDQUIwNzNFQkNCQjBDNkFBRkY0QkI0MTBFRkIiLCJwIjoiRkY2MDA0ODNEQjZBQkZDNUI0NUVBQjc4NTk0QjM1MzNENTUwRDlGMUJGMkE5OTJBN0E4REFBNkRDMzRGODA0NUFENEU2RTBDNDI5RDMzNEVFRUFBRUZEN0UyM0Q0ODEwQkUwMEU0Q0MxNDkyQ0JBMzI1QkE4MUZGMkQ1QTVCMzA1QThEMTdFQjNCRjRBMDZBMzQ5RDM5MkUwMEQzMjk3NDRBNTE3OTM4MDM0NEU4MkExOEM0NzkzMzQzOEY4OTFFMjJBRUVGODEyRDY5QzhGNzVFMzI2Q0I3MEVBMDAwQzNGNzc2REZEQkQ2MDQ2MzhDMkVGNzE3RkMyNkQwMkUxNyIsInEiOiJFMjFFMDRGOTExRDFFRDc5OTEwMDhFQ0FBQjNCRjc3NTk4NDMwOUMzIiwiZyI6IkM1MkE0QTBGRjNCN0U2MUZERjE4NjdDRTg0MTM4MzY5QTYxNTRGNEFGQTkyOTY2RTNDODI3RTI1Q0ZBNkNGNTA4QjkwRTVERTQxOUUxMzM3RTA3QTJFOUUyQTNDRDVERUE3MDREMTc1RjhFQkY2QUYzOTdENjlFMTEwQjk2QUZCMTdDN0EwMzI1OTMyOUU0ODI5QjBEMDNCQkM3ODk2QjE1QjRBREU1M0UxMzA4NThDQzM0RDk2MjY5QUE4OTA0MUY0MDkxMzZDNzI0MkEzODg5NUM5RDVCQ0NBRDRGMzg5QUYxRDdBNEJEMTM5OEJEMDcyREZGQTg5NjIzMzM5N0EifSwicHJpbmNpcGFsIjp7ImVtYWlsIjoiMDFhNzk2OGNiNTIyNGNlZmJjMmQ5MDFjYzI4NjI2YmVAYXBpLmFjY291bnRzLmZpcmVmb3guY29tIn0sImlhdCI6MTU2MDE1NjkyNjkyOCwiZXhwIjoxNTYwMTc4NTM2OTI4LCJmeGEtZ2VuZXJhdGlvbiI6MTQ5NjA1OTU1ODg5MywiZnhhLWxhc3RBdXRoQXQiOjE1MzE3MjkzNjIsImZ4YS12ZXJpZmllZEVtYWlsIjoiMTUxNzE2ODM5NTNAMTYzLkNPTSIsImZ4YS1kZXZpY2VJZCI6ImZjM2M1ZmMzMjI5MDU2MDI1Yzc0NjNmMzYyODAxMjdlIiwiZnhhLXRva2VuVmVyaWZpZWQiOnRydWUsImZ4YS1hbXIiOlsicHdkIiwiZW1haWwiXSwiZnhhLWFhbCI6MSwiZnhhLXByb2ZpbGVDaGFuZ2VkQXQiOjE0OTYwNTk1NTg4OTMsImlzcyI6ImFwaS5hY2NvdW50cy5maXJlZm94LmNvbSJ9.jPlOmVWT2_wjbmY3VUQTwCmy7lbrqlWhhHtcf-2gOSwOIJ7AJ1bik6MyoU9UG34PR5D5VHW9OsZKXwvkGXoSXmpRPhsDMzQsQTmSdxlYaQALryBuT5PpXj0wZYvAUL7UdhbFpjxrZsnu6lQ9R9RfxQVP63bthsN8tfkfQJUOltX4pOUkmoIZZSZfORpJ5XYhAjP9ljIs_XuIZHNqtcfOUJ3BUcXX4E7BIQ4ErkgNJ3H0ZPIBK7SS-g7pwkE7LiT0-60X5V4KnFKnloZk8HM7zxLfpRjX3SXZSalC3HbB4iJtyYlfiIxNpR4UDXtLETpeR38X6K9WKta7iJDsbIZDig"}
+1560156937138	Hawk	DEBUG	(Response) /certificate/sign: code: 200 - Status text: OK
+1560156937138	Services.Common.RESTResponse	TRACE	Processing response headers.
+1560156937138	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -1138
+1560156937138	FirefoxAccounts	DEBUG	getCertificate got a new one: true
+1560156937138	FirefoxAccounts	DEBUG	_updateAccountData with items: ["keyPair","cert"]
+1560156937139	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified","oauthTokens","profileCache","device"]
+1560156937139	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified","oauthTokens","profileCache","device"]
+1560156937139	FirefoxAccounts	DEBUG	getAssertionFromCert
+1560156937140	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1560156937141	Sync.BrowserIDManager	DEBUG	Getting a token
+1560156937141	Services.Common.TokenServerClient	DEBUG	Beginning BID assertion exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1560156937141	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1560156937141	Services.Common.RESTRequest	TRACE	HTTP Header accept: application/json
+1560156937141	Services.Common.RESTRequest	TRACE	HTTP Header authorization: ***** (suppressed)
+1560156937141	Services.Common.RESTRequest	TRACE	HTTP Header x-client-state: 2b4808ec903fea06ed79efc7abe17c52
+1560156937142	FirefoxAccounts	TRACE	finished write of json user data - took: 3
+1560156937142	FirefoxAccounts	DEBUG	writing secure storage: ["kSync","kXCS","kExtSync","kExtKbHash"]
+1560156937142	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1560156937146	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1560156938736	Services.Common.RESTRequest	TRACE	onStartRequest: GET https://token.services.mozilla.com/1.0/sync/1.5
+1560156938736	Services.Common.RESTRequest	TRACE	Channel for GET https://token.services.mozilla.com/1.0/sync/1.5 returned status code 0
+1560156938736	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 200
+1560156938736	Services.Common.RESTRequest	TRACE	GET body: {"uid": 79160689, "hashalg": "sha256", "api_endpoint": "https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689", "duration": 3600, "key": "BTnOpggNeCpYj0ameSxbZWmUECYrxz8BW61elPtFq3A=", "hashed_fxa_uid": "48c5b5cbc3ecc71ba538d3676e797a49", "id": "eyJub2RlIjogImh0dHBzOi8vc3luYy01MjktdXMtd2VzdC0yLnN5bmMuc2VydmljZXMubW96aWxsYS5jb20iLCAidWlkIjogNzkxNjA2ODksICJleHBpcmVzIjogMTU2MDE2MDUzOCwgImZ4YV91aWQiOiAiNDhjNWI1Y2JjM2VjYzcxYmE1MzhkMzY3NmU3OTdhNDkiLCAic2FsdCI6ICJiNjlhM2MiLCAiZGV2aWNlX2lkIjogIjFhOWM1Mzc4Y2ZkZTMwMzU1ZjczMGFhNzc2YmY4ZGQ1In0nzarHhFUmdHdSBAVA5y4ChnW6y2B6CjJWUbbS6SDRrg=="}
+1560156938737	Services.Common.TokenServerClient	DEBUG	Got token response: 200
+1560156938737	Services.Common.RESTResponse	TRACE	Processing response headers.
+1560156938737	Services.Common.TokenServerClient	DEBUG	Successful token response
+1560156938737	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1560156938738	Sync.Status	DEBUG	Status.login: success.status_ok => success.login
+1560156938738	Sync.Status	DEBUG	Status.service: error.login.failed => success.status_ok
+1560156938738	Sync.BrowserIDManager	DEBUG	_findCluster returning https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/
+1560156938738	Sync.BrowserIDManager	DEBUG	Cluster value = https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/
+1560156938738	Sync.BrowserIDManager	DEBUG	Setting cluster to https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/
+1560156938738	Sync.Service	DEBUG	Caching URLs under storage user base: https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/
+1560156938740	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1560156938741	FirefoxAccounts	DEBUG	getOAuthToken enter
+1560156938742	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1560156938742	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1560156938742	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1560156938742	Services.Common.RESTRequest	TRACE	HTTP Header authorization: ***** (suppressed)
+1560156938742	Services.Common.RESTRequest	TRACE	HTTP Header accept: application/json
+1560156938742	Services.Common.RESTRequest	TRACE	HTTP Header if-none-match: "b5cbbe8f97be5666db3e2241456f48fff9b19a40-gzip"
+1560156939696	Services.Common.RESTRequest	TRACE	onStartRequest: GET https://profile.accounts.firefox.com/v1/profile
+1560156939697	Services.Common.RESTRequest	TRACE	Channel for GET https://profile.accounts.firefox.com/v1/profile returned status code 0
+1560156939697	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1560156939697	Services.Common.RESTRequest	TRACE	GET body: 
+1560156944820	Sync.Resource	DEBUG	GET success 200 https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/info/collections
+1560156944821	Sync.Service	DEBUG	Fetching server configuration: https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/info/configuration
+1560156945137	Sync.Resource	DEBUG	GET success 200 https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/info/configuration
+1560156945138	Sync.Service	DEBUG	Fetching global metadata record
+1560156945457	Sync.Resource	DEBUG	GET success 200 https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/storage/meta/global
+1560156945458	Sync.Service	DEBUG	Clearing cached meta record. metaModified is undefined, setting to 1496059620.31
+1560156945792	Sync.Resource	DEBUG	GET success 200 https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/storage/meta/global
+1560156945792	Sync.Service	DEBUG	Weave Version: 1.62.0 Local Storage: 5 Remote Storage: 5
+1560156945792	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1560156945792	Sync.Service	INFO	Testing info/collections: {"passwords":1560063258.64,"addons":1558075909.55,"tabs":1560074092.44,"clients":1560059644.01,"crypto":1496059604.95,"forms":1559987825.76,"meta":1496059620.31,"bookmarks":1559308094.98,"prefs":1551258356.99,"history":1560074092.92}
+1560156945792	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 0
+1560156945792	Sync.Service	INFO	collection keys reports that a key update is needed.
+1560156946098	Sync.Resource	DEBUG	GET success 200 https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/storage/crypto/keys
+1560156946098	Sync.CollectionKeyManager	INFO	Updating collection keys...
+1560156946100	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1496059604.95.
+1560156946100	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1560156946100	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1560156946100	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1560156946100	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1560156946100	Sync.CollectionKeyManager	INFO	Bumping last modified to 1496059604.95
+1560156946100	Sync.CollectionKeyManager	INFO	Collection keys updated.
+1560156946100	Sync.Status	DEBUG	Status.login: success.login => success.login
+1560156946100	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1560156946100	Sync.Service	DEBUG	Caching URLs under storage user base: https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/
+1560156946101	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1560156946103	Sync.Status	INFO	Resetting Status.
+1560156946103	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1560156946430	Sync.Resource	DEBUG	GET success 200 https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/info/collections?v=1.62.0
+1560156946432	Sync.Service	DEBUG	Fetching server configuration: https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/info/configuration
+1560156946737	Sync.Resource	DEBUG	GET success 200 https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/info/configuration
+1560156946738	Sync.Service	DEBUG	Fetching global metadata record
+1560156946738	Sync.Service	DEBUG	Weave Version: 1.62.0 Local Storage: 5 Remote Storage: 5
+1560156946738	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1560156946738	Sync.Service	INFO	Testing info/collections: {"passwords":1560063258.64,"addons":1558075909.55,"tabs":1560074092.44,"clients":1560059644.01,"crypto":1496059604.95,"forms":1559987825.76,"meta":1496059620.31,"bookmarks":1559308094.98,"prefs":1551258356.99,"history":1560074092.92}
+1560156946738	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1496059604.95
+1560156946738	Sync.Synchronizer	DEBUG	Refreshing client list.
+1560156946739	Sync.Engine.Clients	DEBUG	First sync, uploading all items
+1560156946740	Sync.Engine.Clients	INFO	1 outgoing items pre-reconciliation
+1560156947576	Sync.Collection	DEBUG	GET success 200 https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/storage/clients?full=1&limit=1000
+1560156947579	Sync.Engine.Clients	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 1 reconciled.
+1560156947580	Sync.Engine.Clients	DEBUG	Refreshing the known stale clients list
+1560156947580	Services.Common.RESTRequest	TRACE	local time, offset: 1560156947580, -1138
+1560156947581	Services.Common.RESTRequest	TRACE	hawk auth header: Hawk id="e3c15379ff07b1d4cfd67c86b0105669aedbcc727ec679f2086850ef9f3e73d7", ts="1560156946", nonce="SAASO2osi88=", mac="W2J5Pi9cNTuRlf0/pODsomYYQahS9RJll4Z6WYCO1Ok="
+1560156947581	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/account/devices
+1560156947581	Services.Common.RESTRequest	TRACE	HTTP Header authorization: ***** (suppressed)
+1560156947581	Services.Common.RESTRequest	TRACE	HTTP Header content-type: text/plain
+1560156947581	Services.Common.RESTRequest	TRACE	HTTP Header accept-language: zh-CN, zh, zh-TW, zh-HK, en-US, en
+1560156948016	Services.Common.RESTRequest	TRACE	onStartRequest: GET https://api.accounts.firefox.com/v1/account/devices
+1560156948017	Services.Common.RESTRequest	TRACE	Channel for GET https://api.accounts.firefox.com/v1/account/devices returned status code 0
+1560156948017	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/account/devices 200
+1560156948017	Services.Common.RESTRequest	TRACE	GET body: [{"id":"0d102f3eec2322924742a5e4ef0e7e4c","isCurrentDevice":false,"location":{},"name":"用户 zhou 在 zhou-X555LD 上使用的 Firefox","type":"desktop","pushCallback":"https://updates.push.services.mozilla.com/wpush/v1/gAAAAABaJSnktvWBQrH7P066iFSRCDbB5Bt6X0ot-3nQ1OpB98ihZJYNt_vUZuld26nPyA2rOQ8eLf69JZkmBNdnNjAVlKpgfkHJ0G8un7qZGQq6jhogWIrLmTCx7O02EYMOXVIELeSA","pushPublicKey":"BP7lc7d8oh95b78oghY_LnL9DhhGp8MzlDJOvSmvB6dG7CfLmMtVX13HqObYOstISSJfS3KjiZ6hQTsNIn1iR4M","pushAuthKey":"rUPIE6tfk6SdvIvJvgI20A","pushEndpointExpired":true,"availableCommands":{},"lastAccessTime":1519620170886,"lastAccessTimeFormatted":"a year ago"},{"id":"2c46d8d5ccaa2907325a8b0972d8fe0a","isCurrentDevice":false,"location":{},"name":"zhou 在 zhou-X555LD 上使用的 Firefox","type":"desktop","pushCallback":"https://updates.push.services.mozilla.com/wpush/v1/gAAAAABa3dA9fejot-8fMvwYoZ02Nr2pG3WOGEBasXVBBZhXGopcqqFeeQdYHhcu-fCd_id8GzwkdJa_L2JZqJqsKdFKruPnSqQt8x60h7Vc_Z4LWpeYBd24wuFCy1-k0dKZIHkU_gXq","pushPublicKey":"BJ5mSy9pVti72myJkdXly3edBu97rw0TiKTqWpBAtXRCF3HMrXY-fBRa9x5VWycVT1ai9-Ai-P2TbpIZ2sSBlt0","pushAuthKey":"xBNhQXzs8c_sQ-Go7IL7PA","pushEndpointExpired":true,"availableCommands":{},"lastAccessTime":1526184496043,"lastAccessTimeFormatted":"a year ago"},{"id":"3595f4fa38d845edd366f31170618130","isCurrentDevice":false,"location":{},"name":"用户 zhou 在 zhou-X555LD 上使用的 Firefox","type":"desktop","pushCallback":"https://updates.push.services.mozilla.com/wpush/v1/gAAAAABaFVSvUMY1O_H_GVFdYs6PaFD4v5xUrX9O9Qzp_Tzu1uYZ1DjG9GCdFXdADpiE6wotRIa0Ss0987NjDQszzcLyc1YsqMD_mXG9xmnbwHgEmeaLBNia4OuGf8bXS8xI2Jfe7Qu7","pushPublicKey":"BEYrkT7Z_sfoqClNTed91AkJfIgowm0wP5dYUZch1qTB6dBAXi4Exrl5ASIljfjeu23GshX7xNxFbVH0Xie6V1U","pushAuthKey":"Hn0z6dwxzHBY0xYhfKZjWw","pushEndpointExpired":true,"availableCommands":{},"lastAccessTime":1511354030307,"lastAccessTimeFormatted":"2 years ago"},{"id":"60ca6b7c9b097a1d1bd27178d7139967","isCurrentDevice":false,"location":{},"name":"?? zhou ??? zhou-X555LD ? Firefox","type":"desktop","pushCallback":"https://updates.push.services.mozilla.com/wpush/v1/gAAAAABZPoLJpgAwIzV2bYuRbXLv2cMU8q5l6AbKfX8YtHR39Bo_rbVtjIF1_wzsC8KpEEohSeEe5tOiv2i82Wdg8St_8n62ynftKLRZPBg8CnDKSKADXM8amJSa34Q1R8ecn8t5G5gS","pushPublicKey":"BNzDEg2XrzAStWUjqFIH7Jn9s2IUgZTKa5or0YJ-fWh7Mqvog4GW0v2qVhNq-YXyIKGE-wwTwXLpKDdXvH2kXfI","pushAuthKey":"G-V3JpUTSyJhUJSaoaHD6w","pushEndpointExpired":true,"availableCommands":{},"lastAccessTime":1507717429387,"lastAccessTimeFormatted":"2 years ago"},{"id":"672bd019b749c7e38118aaa1d2973691","isCurrentDevice":false,"location":{},"name":"用户 zhou 在 zhou-X555LD 上使用的 Firefox","type":"desktop","pushCallback":null,"pushPublicKey":null,"pushAuthKey":null,"pushEndpointExpired":false,"availableCommands":{},"lastAccessTime":1512215268466,"lastAccessTimeFormatted":"2 years ago"},{"id":"67ff45fa36bc3e7b1a63106349b3b3f1","isCurrentDevice":false,"location":{},"name":"?? zhou ??? zhou-X555LD ? Firefox","type":"desktop","pushCallback":"https://updates.push.services.mozilla.com/wpush/v1/gAAAAABZLA6wXRKz6mfCRZRCSEQM95cpleX5x14E9IByslPZruyShEbl9ngwjauZRVB6grxdkJfYy2RfMzELKhk9f_xUQMQ_GVTPVTijGi43FqHpO0AZ2-G3Ga9nIL77BWetJ82ljQeh","pushPublicKey":"BERE4P1QxFXJZ0aISC8NPako2lPE1o_f1UJTN_eM1DuNt8QnLa2KGsRKMF_OTvO2q6kmMQHc7lrnJXoh7x6CV2w","pushAuthKey":"Kq5tf6KzZBakfz270HXFnQ","pushEndpointExpired":true,"availableCommands":{},"lastAccessTime":1496059558911,"lastAccessTimeFormatted":"2 years ago","approximateLastAccessTime":1507081020000,"approximateLastAccessTimeFormatted":"2 years ago"},{"id":"75ac7a880b79411a8e29907445ca241e","isCurrentDevice":false,"location":{},"name":"用户 zhou 在 zhou-X555LD 上使用的 Firefox","type":"desktop","pushCallback":"https://updates.push.services.mozilla.com/wpush/v1/gAAAAABak8_Ws-ZDhU6jLCIgg1xXK6CpQt_h49vCF-LTssCZGdVODnikTpWJKlsSrEA-QMmGzzGaeCRrQ3GX-YgwYn593mPhK-3PXZobJwXuO1r-K5vfs6CMrleuIVxaQIA9HIS2SXRt","pushPublicKey":"BPjGko1ZxdHl7BIxZcdJNYiN7MFzJkcGWtjbUfA308ihoSZtsGIMmZmHl-07nrtXekBYml38BwKnwV41MHaF2Rs","pushAuthKey":"Ro0b6GBC5HzDpSv_rsY_Jg","pushEndpointExpired":true,"availableCommands":{},"lastAccessTime":1521957379441,"lastAccessTimeFormatted":"a year ago"},{"id":"76677d56dc5026801e18451312bb7732","isCurrentDevice":false,"location":{},"name":"zhou 在 zhou-X555LD 上使用的 Firefox","type":"desktop","pushCallback":"https://updates.push.services.mozilla.com/wpush/v1/gAAAAABa_sf-W80B0qJjeEUBoOj4oYuDBXtoKb-njNZFdvbwmjbgqK_ZfFoeAgBGL0p6MHAohRVN40p-9YycrP0-D9z7bVUyopBoDPXSDcWAKiH4gRfktbmfQpo0mij4cB8F8EfERTaS","pushPublicKey":"BONOqcC8OjslAtGONboYB2FKXc4TexymvuR6d-IR5f-abzq8G7rzm5k4louN7t9dLJ4euSIGgjI5vUZ_bMOsXm0","pushAuthKey":"KC2yVDQfXmCMQMhITOyFew","pushEndpointExpired":true,"availableCommands":{},"lastAccessTime":1526716245510,"lastAccessTimeFormatted":"a year ago"},{"id":"9d1365f4df21d715501c1b549e0f4568","isCurrentDevice":false,"location":{},"name":"zhou 在 zhou-X555LD 上使用的 Firefox","type":"desktop","pushCallback":"https://updates.push.services.mozilla.com/wpush/v1/gAAAAABa-XDWQrhA5ZOJ-ez9zdYbW09p_b3JsvcHBC9pMTA-iaqYRBhK_lhYVsybTbtpv92OKPhWyCFyQo9gjwh5rcT_nuPwxaPB2HOYdbhrGYwUrHvUptz6wU2f2Ef-UvrV7H5Ef2W7","pushPublicKey":"BHCyPBYriOdfgsYTeyCrFYkMDRj9NfKKhsA0Ruz6WEvB0JIncMdh4DhQHJuysGUGq4bvWm8J1_GvGvWZw1hd0kg","pushAuthKey":"62CbR30HQjGFlOl2lP-64g","pushEndpointExpired":true,"availableCommands":{},"lastAccessTime":1531574981420,"lastAccessTimeFormatted":"a year ago"},{"id":"a73d4d54db26a71da355b51b5837a4a6","isCurrentDevice":false,"location":{},"name":"?? zhou ??? zhou-X555LD ? Firefox","type":"desktop","pushCallback":"https://updates.push.services.mozilla.com/wpush/v1/gAAAAABZN-RCm_CNjT6cxDYmldkWIxsBSg6zm7haT5B19NMujaLDniWtAkPneAQ38AULmhWGmMS6J3gMyJ8sgafpbCpUNxMt00DwSyfl0j6snCVl_ErZryDsIDzktzulUTYHxGX6GiUm","pushPublicKey":"BJwelgUJETtV0Cc9F3QyX5avyhveoqSiBBzzUKkOEkhKT2_4C9SzZXes5s-rXEKUDudWM7KWYQ0WN5Q6JcjVZns","pushAuthKey":"QujjkHGRQuFekB6xieOH7Q","pushEndpointExpired":true,"availableCommands":{},"lastAccessTime":1496837018102,"lastAccessTimeFormatted":"2 years ago","approximateLastAccessTime":1507081020000,"approximateLastAccessTimeFormatted":"2 years ago"},{"id":"a7578e1d1c5cb73b05b58e0bf678483a","isCurrentDevice":false,"location":{},"name":"?? zhou ??? zhou-X555LD ? Firefox","type":"desktop","pushCallback":"https://updates.push.services.mozilla.com/wpush/v1/gAAAAABZN6r-b2ohzGb48pdPWHmNQUAborZzgM8PzNmXyMdbpodybwM_lqEJoFsfiXCprakFk4FGtPAkPKEWoMkf76mPYXR_hvXTBVIukYijs4wDPZVebqIBKPKUvQ1lkGIszHoMk6pp","pushPublicKey":"BGiDmxXrLO2gaonk25O25Q3tuiIPhptmsTrz89q8gBKnw7FJAsoNlVhf-0ByBdFtg52bww26BA6pd882B-7ipxg","pushAuthKey":"wXGtZUFzuGlS3yxDIQWMxw","pushEndpointExpired":true,"availableCommands":{},"lastAccessTime":1496820473528,"lastAccessTimeFormatted":"2 years ago","approximateLastAccessTime":1507081020000,"approximateLastAccessTimeFormatted":"2 years ago"},{"id":"aba25d33e6017848b172212bb4ee8c9d","isCurrentDevice":false,"location":{},"name":"用户 zhou 运行于 zhou-X555LD 的 Firefox","type":"desktop","pushCallback":"https://updates.push.services.mozilla.com/wpush/v1/gAAAAABZ4eN11iHG_yfcLBIEV0ehOry7o4u-pYs4zY3HpCA8t3Z3Px4IibMbsd6DxN4XWV_E8SrZqN9okSXkNIkcZWmzTEss8C6u6TOnsqHM3WsAnVmxQoQnn5KsNx20xuozO9_3wblo","pushPublicKey":"BE5j_DPhTCWmj3gM5vCOXRrSOUBk2cJLvy6cRr-vnEfq8jClXGkMEm-lS38bGkVwAVcAkXxAtbXUw5mjqZjaJWI","pushAuthKey":"i4ZZd5cBZAvcz8pptklurg","pushEndpointExpired":true,"availableCommands":{},"lastAccessTime":1508238920406,"lastAccessTimeFormatted":"2 years ago"},{"id":"d6731b198ab05a17ebe4c7695afaeba3","isCurrentDevice":false,"location":{},"name":"zhou’s Firefox on zhou-X555LD","type":"desktop","pushCallback":"https://updates.push.services.mozilla.com/wpush/v1/gAAAAABZ5zFVT3jqjpd33S55ybsjCB0IVdSOUP9PYHPqVZSvcjhKJd2d5EkU3p4_ExJq4c5ufsPimKXkwXeED0ReZCzMs5vQ3yWWzgxkQUMSff3_-G3ib6wMYlnV2nvkJzx6O1jNmOLI","pushPublicKey":"BG6VqPSkufH1Kn4dvp0s3wKV6ix_bmvmnlyDSawPec3LYqos8lMQdTF9SPdwKo-G15hgx9FWICTIzdrvu0dlr08","pushAuthKey":"h2FQrwypLFuuKS4BuUZqHA","pushEndpointExpired":true,"availableCommands":{},"lastAccessTime":1508325641546,"lastAccessTimeFormatted":"2 years ago"},{"id":"fc3c5fc3229056025c7463f36280127e","isCurrentDevice":true,"location":{},"name":"zhou 在 zhou-X555LD－debian 上使用的 Firefox","type":"desktop","pushCallback":"https://updates.push.services.mozilla.com/wpush/v1/gAAAAABa-XDWQrhA5ZOJ-ez9zdYbW09p_b3JsvcHBC9pMTA-iaqYRBhK_lhYVsybTbtpv92OKPhWyCFyQo9gjwh5rcT_nuPwxaPB2HOYdbhrGYwUrHvUptz6wU2f2Ef-UvrV7H5Ef2W7","pushPublicKey":"BHCyPBYriOdfgsYTeyCrFYkMDRj9NfKKhsA0Ruz6WEvB0JIncMdh4DhQHJuysGUGq4bvWm8J1_GvGvWZw1hd0kg","pushAuthKey":"62CbR30HQjGFlOl2lP-64g","pushEndpointExpired":false,"availableCommands":{"https://identity.mozilla.com/cmd/open-uri":"{\"kid\":\"2b4808ec903fea06ed79efc7abe17c52\",\"IV\":\"Exkw/bNYuF13SXtAcwb6zw==\",\"hmac\":\"6a16027d5546ce35d8c56f5aaa2ad473d068bed6ca40a464f747e2211f0d15d9\",\"ciphertext\":\"dcUOkFLf7xQX7aFbjm0bOLIp1EBPzmIrb6lB82m08xjWAU+96fe3mm+eVJShd8jfmjDabqWCGIzT5Hi3qkSV5wU3vCIyZVn2wNHzv+jteAWNaRUgGJH7NS7NF4i6E4cJKszwuR0+9aKe865D+RzTnbhus9/GWgQjUGFmdYF97VUB2BYQ2TCDm2t6In6Z8OV6\"}"},"lastAccessTime":1560156936928,"lastAccessTimeFormatted":"a few seconds ago"}]
+1560156948017	Hawk	DEBUG	(Response) /account/devices: code: 200 - Status text: OK
+1560156948017	Services.Common.RESTResponse	TRACE	Processing response headers.
+1560156948017	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -1017
+1560156948019	FirefoxAccounts	DEBUG	FxAccountsPush loading service
+1560156948019	FirefoxAccounts	DEBUG	FxAccountsPush initialized
+1560156948019	FirefoxAccounts	TRACE	FxAccountsPush registerPushEndpoint
+1560156948021	FirefoxAccounts	DEBUG	FxAccountsPush got subscription
+1560156948021	FirefoxAccounts	DEBUG	registering new device details
+1560156948022	Services.Common.RESTRequest	TRACE	local time, offset: 1560156948022, -1017
+1560156948023	Services.Common.RESTRequest	TRACE	hawk auth header: Hawk id="e3c15379ff07b1d4cfd67c86b0105669aedbcc727ec679f2086850ef9f3e73d7", ts="1560156947", nonce="dYkvPBRXapw=", hash="IrXoxMvBuJW3mgRUMRmsuAOYbauKPzeRj2+0Nccv3iU=", mac="QFbejLkrl+xI8P4wbl7aievlId+gTpJ6DEnJ6k44Ke0="
+1560156948023	Services.Common.RESTRequest	DEBUG	POST request to https://api.accounts.firefox.com/v1/account/device
+1560156948023	Services.Common.RESTRequest	TRACE	HTTP Header authorization: ***** (suppressed)
+1560156948023	Services.Common.RESTRequest	TRACE	HTTP Header content-type: application/json
+1560156948023	Services.Common.RESTRequest	TRACE	HTTP Header accept-language: zh-CN, zh, zh-TW, zh-HK, en-US, en
+1560156948023	Services.Common.RESTRequest	DEBUG	POST Length: 432
+1560156948023	Services.Common.RESTRequest	TRACE	POST Body: {"name":"zhou å¨ zhou-X555LDï¼debian ä¸ä½¿ç¨ç Firefox","type":"desktop","pushCallback":"https://updates.push.services.mozilla.com/wpush/v1/gAAAAABa-XDWQrhA5ZOJ-ez9zdYbW09p_b3JsvcHBC9pMTA-iaqYRBhK_lhYVsybTbtpv92OKPhWyCFyQo9gjwh5rcT_nuPwxaPB2HOYdbhrGYwUrHvUptz6wU2f2Ef-UvrV7H5Ef2W7","pushPublicKey":"BHCyPBYriOdfgsYTeyCrFYkMDRj9NfKKhsA0Ruz6WEvB0JIncMdh4DhQHJuysGUGq4bvWm8J1_GvGvWZw1hd0kg","pushAuthKey":"62CbR30HQjGFlOl2lP-64g"}
+1560156948335	Services.Common.RESTRequest	TRACE	onStartRequest: POST https://api.accounts.firefox.com/v1/account/device
+1560156948336	Services.Common.RESTRequest	TRACE	Channel for POST https://api.accounts.firefox.com/v1/account/device returned status code 0
+1560156948336	Services.Common.RESTRequest	DEBUG	POST https://api.accounts.firefox.com/v1/account/device 200
+1560156948336	Services.Common.RESTRequest	TRACE	POST body: {"pushCallback":"https://updates.push.services.mozilla.com/wpush/v1/gAAAAABa-XDWQrhA5ZOJ-ez9zdYbW09p_b3JsvcHBC9pMTA-iaqYRBhK_lhYVsybTbtpv92OKPhWyCFyQo9gjwh5rcT_nuPwxaPB2HOYdbhrGYwUrHvUptz6wU2f2Ef-UvrV7H5Ef2W7","pushPublicKey":"BHCyPBYriOdfgsYTeyCrFYkMDRj9NfKKhsA0Ruz6WEvB0JIncMdh4DhQHJuysGUGq4bvWm8J1_GvGvWZw1hd0kg","pushAuthKey":"62CbR30HQjGFlOl2lP-64g","pushEndpointExpired":false,"name":"zhou 在 zhou-X555LD－debian 上使用的 Firefox","type":"desktop","id":"fc3c5fc3229056025c7463f36280127e","availableCommands":{}}
+1560156948336	Hawk	DEBUG	(Response) /account/device: code: 200 - Status text: OK
+1560156948336	Services.Common.RESTResponse	TRACE	Processing response headers.
+1560156948336	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -336
+1560156948337	FirefoxAccounts	DEBUG	_updateAccountData with items: ["deviceId","deviceRegistrationVersion"]
+1560156948337	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified","oauthTokens","profileCache","device","deviceId","deviceRegistrationVersion"]
+1560156948337	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified","oauthTokens","profileCache","device","deviceId","deviceRegistrationVersion"]
+1560156948341	FirefoxAccounts	TRACE	finished write of json user data - took: 4
+1560156948341	FirefoxAccounts	DEBUG	writing secure storage: ["kSync","kXCS","kExtSync","kExtKbHash"]
+1560156948341	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1560156948346	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1560156948348	Sync.Engine.Clients	INFO	Posting 1 records of 569 bytes with batch=true
+1560156948349	Sync.Collection	DEBUG	POST Length: 569
+1560156948677	Sync.Collection	DEBUG	POST success 200 https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/storage/clients?batch=true&commit=true
+1560156948680	Sync.SyncScheduler	DEBUG	Client count: 0 -> 1
+1560156948680	Sync.EngineManager	DEBUG	Could not get engine: clients
+1560156948680	Sync.EngineManager	DEBUG	Engines are: ["addons","forms","history","passwords","prefs","tabs","extension-storage","bookmarks"]
+1560156948680	Sync.Synchronizer	INFO	Updating enabled engines: 1 clients.
+1560156948681	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1560156948683	Sync.Engine.Prefs	INFO	0 outgoing items pre-reconciliation
+1560156948684	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1560156948718	Sync.Engine.Passwords	INFO	0 outgoing items pre-reconciliation
+1560156948720	Sync.Engine.Passwords	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1560156948722	Sync.Engine.Tabs	DEBUG	First sync, uploading all items
+1560156948722	Sync.Engine.Tabs	INFO	1 outgoing items pre-reconciliation
+1560156953270	Sync.Collection	DEBUG	GET success 200 https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/storage/tabs?full=1&limit=1000
+1560156953276	Sync.Engine.Tabs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 1 reconciled.
+1560156953304	Sync.Engine.Tabs	INFO	Posting 1 records of 79417 bytes with batch=true
+1560156953305	Sync.Collection	DEBUG	POST Length: 79417
+1560156954330	Sync.Collection	DEBUG	POST success 200 https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/storage/tabs?batch=true&commit=true
+1560156954334	Sync.Engine.Bookmarks	INFO	2 outgoing items pre-reconciliation
+1560156954337	Sync.Engine.Bookmarks	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1560156954490	Sync.Engine.Bookmarks	INFO	Posting 2 records of 1120 bytes with batch=true
+1560156954491	Sync.Collection	DEBUG	POST Length: 1120
+1560156954897	Sync.Collection	DEBUG	POST success 200 https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/storage/bookmarks?batch=true&commit=true
+1560156954901	Sync.Engine.Bookmarks.BookmarkSyncUtils	DEBUG	pushChanges: Processed change records: {"weak":0,"skipped":0,"updated":2}
+1560156954902	Sync.Engine.Addons	DEBUG	Refreshing reconciler state
+1560156954902	Sync.AddonsReconciler	INFO	Refreshing global state from AddonManager.
+1560156954907	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Emoji Cheatsheet for GitHub, Basecamp etc. (version=2.0.1, id=jid1-Xo5SuA6qc1DFpw@jetpack)
+1560156954907	Sync.AddonsReconciler	DEBUG	Rectifying state for addon YouTube™ Flash® Player (version=2.0.2, id=jid1-HAV2inXAnQPIeA@jetpack)
+1560156954907	Sync.AddonsReconciler	DEBUG	Rectifying state for addon FlashGot (version=1.5.6.14, id={19503e42-ca3c-4c27-b1e2-9cdb2170ee34})
+1560156954907	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Flash Video Player for Facebook™ (version=64.1.0, id={d0bfdcce-52c7-4b32-bb45-948f62db8d3f})
+1560156954907	Sync.AddonsReconciler	DEBUG	Rectifying state for addon YouTube Flash Video Player (version=64.0.0, id={f3bd3dd2-2888-44c5-91a2-2caeb33fb898})
+1560156954907	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Flash-HTML5 for YouTube™ (version=0.1.9, id=jid1-o2qEVrZ4t5FJWu@jetpack)
+1560156954907	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Flash and Video Download (version=3.2.1, id={bee6eb20-01e0-ebd1-da83-080329fb9a3a})
+1560156954907	Sync.AddonsReconciler	DEBUG	Rectifying state for addon 标签页优化 (version=5.67, id=tabtweak@mozillaonline.com)
+1560156954908	Sync.AddonsReconciler	DEBUG	Rectifying state for addon 网页截图 (version=3.67, id=easyscreenshot@mozillaonline.com)
+1560156954908	Sync.AddonsReconciler	DEBUG	Rectifying state for addon 附加组件管理器 (version=4.67.3, id=cpmanager@mozillaonline.com)
+1560156954908	Sync.AddonsReconciler	DEBUG	Rectifying state for addon 百度网盘助手 (version=1.0.1, id={4541271a-93bf-4c96-9f87-0b0f8c6ee54c})
+1560156954909	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Enhancer for YouTube™ (version=2.0.91, id=enhancerforyoutube@maximerf.addons.mozilla.org)
+1560156954909	Sync.AddonsReconciler	DEBUG	Rectifying state for addon 火狐主页 (version=3.67.4, id=cehomepage@mozillaonline.com)
+1560156954909	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Grammar and Spell Checker - LanguageTool (version=2.1.16, id=languagetool-webextension@languagetool.org)
+1560156954909	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Web Compat (version=1.1, id=webcompat@mozilla.org)
+1560156954909	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Form Autofill (version=1.0, id=formautofill@mozilla.org)
+1560156954909	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Firefox Screenshots (version=30.1.0, id=screenshots@mozilla.org)
+1560156954909	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Activity Stream (version=2018.04.20.1103-b3b95672, id=activity-stream@mozilla.org)
+1560156954909	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Application Update Service Helper (version=2.0, id=aushelper@mozilla.org)
+1560156954909	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Pocket (version=1.0.5, id=firefox@getpocket.com)
+1560156954910	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Follow-on Search Telemetry (version=0.9.6, id=followonsearch@mozilla.com)
+1560156954910	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Firefox ESR configurer for OLDJAWS screen reader (version=1.2, id=jaws-esr@mozilla.org)
+1560156954910	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present locally: jaws-esr@mozilla.org
+1560156954910	Sync.AddonsReconciler	INFO	Change recorded for jaws-esr@mozilla.org
+1560156954910	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 1 jaws-esr@mozilla.org
+1560156954910	Sync.Engine.Addons.Store	DEBUG	jaws-esr@mozilla.org not syncable: vetoed by the addon manager.
+1560156954910	Sync.Engine.Addons.Tracker	DEBUG	Ignoring change because add-on isn't syncable: jaws-esr@mozilla.org
+1560156954910	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Photon onboarding (version=1.0, id=onboarding@mozilla.org)
+1560156954910	Sync.AddonsReconciler	DEBUG	Rectifying state for addon српски (sr) Language Pack (version=60.0buildid20181023221722, id=langpack-sr@firefox-esr.mozilla.org)
+1560156954911	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Lietuvių Language Pack (version=60.0buildid20181023221722, id=langpack-lt@firefox-esr.mozilla.org)
+1560156954911	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Russian (RU) Language Pack (version=60.0buildid20181023221722, id=langpack-ru@firefox-esr.mozilla.org)
+1560156954911	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Български Language Pack (version=60.0buildid20181023221722, id=langpack-bg@firefox-esr.mozilla.org)
+1560156954911	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Galego (España) Language Pack (version=60.0buildid20181023221722, id=langpack-gl@firefox-esr.mozilla.org)
+1560156954911	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Magyar (HU) Language Pack (version=60.0buildid20181023221722, id=langpack-hu@firefox-esr.mozilla.org)
+1560156954912	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ஆங்கிலம் (யூஎஸ்) Language Pack (version=60.0buildid20181023221722, id=langpack-ta@firefox-esr.mozilla.org)
+1560156954912	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Japanese Language Pack (version=60.0buildid20181023221722, id=langpack-ja@firefox-esr.mozilla.org)
+1560156954912	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Bengali (India) Language Pack (version=60.0buildid20181023221722, id=langpack-bn-IN@firefox-esr.mozilla.org)
+1560156954912	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Norsk bokmål (NO) Language Pack (version=60.0buildid20181023221722, id=langpack-nb-NO@firefox-esr.mozilla.org)
+1560156954912	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Ελληνικά Language Pack (version=60.0buildid20181023221722, id=langpack-el@firefox-esr.mozilla.org)
+1560156954912	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Estonian Language Pack (version=60.0buildid20181023221722, id=langpack-et@firefox-esr.mozilla.org)
+1560156954913	Sync.AddonsReconciler	DEBUG	Rectifying state for addon 默认 (version=60.3.0, id={972ce4c6-7e08-4474-a285-3208198ce6fd})
+1560156954914	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Tiếng Việt Language Pack (version=60.0buildid20181023221722, id=langpack-vi@firefox-esr.mozilla.org)
+1560156954914	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Hindi Language Pack (version=60.0buildid20181023221722, id=langpack-hi-IN@firefox-esr.mozilla.org)
+1560156954914	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Ukrainian (UA) Language Pack (version=60.0buildid20181023221722, id=langpack-uk@firefox-esr.mozilla.org)
+1560156954914	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Română (România) Language Pack (version=60.0buildid20181023221722, id=langpack-ro@firefox-esr.mozilla.org)
+1560156954914	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Slovenski jezik Language Pack (version=60.0buildid20181023221722, id=langpack-sl@firefox-esr.mozilla.org)
+1560156954914	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Sinhala (si-LK) Language Pack (version=60.0buildid20181023221722, id=langpack-si@firefox-esr.mozilla.org)
+1560156954914	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Kazakh (KZ) Language Pack (version=60.0buildid20181023221722, id=langpack-kk@firefox-esr.mozilla.org)
+1560156954915	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Hebrew (IL) Language Pack (version=60.0buildid20181023221722, id=langpack-he@firefox-esr.mozilla.org)
+1560156954915	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Македонски Language Pack (version=60.0buildid20181023221722, id=langpack-mk@firefox-esr.mozilla.org)
+1560156954915	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Latviešu (LV) Language Pack (version=60.0buildid20181023221722, id=langpack-lv@firefox-esr.mozilla.org)
+1560156954915	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ไทย Language Pack (version=60.0buildid20181023221722, id=langpack-th@firefox-esr.mozilla.org)
+1560156954915	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Беларуская Language Pack (version=60.0buildid20181023221722, id=langpack-be@firefox-esr.mozilla.org)
+1560156954915	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present locally: langpack-be@firefox-esr.mozilla.org
+1560156954915	Sync.AddonsReconciler	INFO	Change recorded for langpack-be@firefox-esr.mozilla.org
+1560156954915	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 1 langpack-be@firefox-esr.mozilla.org
+1560156954915	Sync.Engine.Addons.Store	DEBUG	langpack-be@firefox-esr.mozilla.org not syncable: type not in whitelist: locale
+1560156954915	Sync.Engine.Addons.Tracker	DEBUG	Ignoring change because add-on isn't syncable: langpack-be@firefox-esr.mozilla.org
+1560156954915	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Deutsch (DE) Language Pack (version=60.0buildid20181023221722, id=langpack-de@firefox-esr.mozilla.org)
+1560156954916	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Béarla (SAM) Language Pack (version=60.0buildid20181023221722, id=langpack-ga-IE@firefox-esr.mozilla.org)
+1560156954916	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Shqip Language Pack (version=60.0buildid20181023221722, id=langpack-sq@firefox-esr.mozilla.org)
+1560156954916	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ಇಂಗ್ಲೀಷ್ (US) Language Pack (version=60.0buildid20181023221722, id=langpack-kn@firefox-esr.mozilla.org)
+1560156954916	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Traditional Chinese (zh-TW) Language Pack (version=60.0buildid20181023221722, id=langpack-zh-TW@firefox-esr.mozilla.org)
+1560156954916	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Slovak (SK) Language Pack (version=60.0buildid20181023221722, id=langpack-sk@firefox-esr.mozilla.org)
+1560156954916	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Asturianu Language Pack (version=60.0buildid20181023221722, id=langpack-ast@firefox-esr.mozilla.org)
+1560156954916	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Español (México) Language Pack (version=60.0buildid20181023221722, id=langpack-es-MX@firefox-esr.mozilla.org)
+1560156954917	Sync.AddonsReconciler	DEBUG	Rectifying state for addon فارسی (ایران) Language Pack (version=60.0buildid20181023221722, id=langpack-fa@firefox-esr.mozilla.org)
+1560156954917	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Gujarati (IN) Language Pack (version=60.0buildid20181023221722, id=langpack-gu-IN@firefox-esr.mozilla.org)
+1560156954917	Sync.AddonsReconciler	DEBUG	Rectifying state for addon العربية Language Pack (version=60.0buildid20181023221722, id=langpack-ar@firefox-esr.mozilla.org)
+1560156954917	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Bahasa Indonesia (ID) Language Pack (version=60.0buildid20181023221722, id=langpack-id@firefox-esr.mozilla.org)
+1560156954917	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Finnish Language Pack (version=60.0buildid20181023221722, id=langpack-fi@firefox-esr.mozilla.org)
+1560156954917	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Bosanski Language Pack (version=60.0buildid20181023221722, id=langpack-bs@firefox-esr.mozilla.org)
+1560156954917	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Español (España) Language Pack (version=60.0buildid20181023221722, id=langpack-es-ES@firefox-esr.mozilla.org)
+1560156954918	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ខ្មែរ Language Pack (version=60.0buildid20181023221722, id=langpack-km@firefox-esr.mozilla.org)
+1560156954918	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Português (pt-BR) Language Pack (version=60.0buildid20181023221722, id=langpack-pt-BR@firefox-esr.mozilla.org)
+1560156954918	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Polski Language Pack (version=60.0buildid20181023221722, id=langpack-pl@firefox-esr.mozilla.org)
+1560156954918	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Cymraeg Language Pack (version=60.0buildid20181023221722, id=langpack-cy@firefox-esr.mozilla.org)
+1560156954918	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Chinese Simplified (zh-CN) Language Pack (version=60.0buildid20181023221722, id=langpack-zh-CN@firefox-esr.mozilla.org)
+1560156954918	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Bengali (Bangladesh) Language Pack (version=60.0buildid20181023221722, id=langpack-bn-BD@firefox-esr.mozilla.org)
+1560156954918	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Norsk nynorsk (NO) Language Pack (version=60.0buildid20181023221722, id=langpack-nn-NO@firefox-esr.mozilla.org)
+1560156954918	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Korean (KR) Language Pack (version=60.0buildid20181023221722, id=langpack-ko@firefox-esr.mozilla.org)
+1560156954919	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Nederlands (NL) Language Pack (version=60.0buildid20181023221722, id=langpack-nl@firefox-esr.mozilla.org)
+1560156954919	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Dansk (da) Language Pack (version=60.0buildid20181023221722, id=langpack-da@firefox-esr.mozilla.org)
+1560156954919	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Czech (CZ) Language Pack (version=60.0buildid20181023221722, id=langpack-cs@firefox-esr.mozilla.org)
+1560156954919	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Basque Language Pack (version=60.0buildid20181023221722, id=langpack-eu@firefox-esr.mozilla.org)
+1560156954919	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Esperanto Language Pack (version=60.0buildid20181023221722, id=langpack-eo@firefox-esr.mozilla.org)
+1560156954919	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Italiano (IT) Language Pack (version=60.0buildid20181023221722, id=langpack-it@firefox-esr.mozilla.org)
+1560156954919	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Icelandic (IS) Language Pack (version=60.0buildid20181023221722, id=langpack-is@firefox-esr.mozilla.org)
+1560156954920	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Hrvatski (HR) Language Pack (version=60.0buildid20181023221722, id=langpack-hr@firefox-esr.mozilla.org)
+1560156954920	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Português (Europeu) Language Pack (version=60.0buildid20181023221722, id=langpack-pt-PT@firefox-esr.mozilla.org)
+1560156954920	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Svenska (SE) Language Pack (version=60.0buildid20181023221722, id=langpack-sv-SE@firefox-esr.mozilla.org)
+1560156954920	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Türkçe (TR) Language Pack (version=60.0buildid20181023221722, id=langpack-tr@firefox-esr.mozilla.org)
+1560156954920	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Català Language Pack (version=60.0buildid20181023221722, id=langpack-ca@firefox-esr.mozilla.org)
+1560156954920	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Malayalam (IN) Language Pack (version=60.0buildid20181023221722, id=langpack-ml@firefox-esr.mozilla.org)
+1560156954920	Sync.AddonsReconciler	DEBUG	Rectifying state for addon English (GB) Language Pack (version=60.0buildid20181023221722, id=langpack-en-GB@firefox-esr.mozilla.org)
+1560156954920	Sync.AddonsReconciler	DEBUG	Rectifying state for addon English (South Africa) Language Pack (version=60.0buildid20181023221722, id=langpack-en-ZA@firefox-esr.mozilla.org)
+1560156954921	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Marathi Language Pack (version=60.0buildid20181023221722, id=langpack-mr@firefox-esr.mozilla.org)
+1560156954921	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Français Language Pack (version=60.0buildid20181023221722, id=langpack-fr@firefox-esr.mozilla.org)
+1560156954921	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Español (AR) Language Pack (version=60.0buildid20181023221722, id=langpack-es-AR@firefox-esr.mozilla.org)
+1560156954921	Sync.AddonsReconciler	DEBUG	Rectifying state for addon తెలుగు (IN) Language Pack (version=60.0buildid20181023221722, id=langpack-te@firefox-esr.mozilla.org)
+1560156954921	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Punjabi (Gurmukhi) Language Pack (version=60.0buildid20181023221722, id=langpack-pa-IN@firefox-esr.mozilla.org)
+1560156954921	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Español (Chile) Language Pack (version=60.0buildid20181023221722, id=langpack-es-CL@firefox-esr.mozilla.org)
+1560156954921	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Spell checker based on Voikko (version=2.2, id={b676e3ff-cda7-4e0c-b2b8-74e4bb40a67a})
+1560156954922	Sync.AddonsReconciler	DEBUG	Rectifying state for addon 明亮 (version=, id=firefox-compact-light@mozilla.org@personas.mozilla.org)
+1560156954922	Sync.AddonsReconciler	DEBUG	Rectifying state for addon 深邃 (version=, id=firefox-compact-dark@mozilla.org@personas.mozilla.org)
+1560156954922	Sync.AddonsReconciler	DEBUG	Rectifying state for addon OpenH264 视频编码器，由思科系统公司提供 (version=1.8.1, id=gmp-gmpopenh264)
+1560156954922	Sync.AddonsReconciler	DEBUG	Adding change because enabled state changed: gmp-gmpopenh264
+1560156954922	Sync.AddonsReconciler	INFO	Change recorded for gmp-gmpopenh264
+1560156954922	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 4 gmp-gmpopenh264
+1560156954922	Sync.Engine.Addons.Store	DEBUG	gmp-gmpopenh264 not syncable: type not in whitelist: plugin
+1560156954922	Sync.Engine.Addons.Tracker	DEBUG	Ignoring change because add-on isn't syncable: gmp-gmpopenh264
+1560156954922	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Widevine 内容解密模块，由 Google 公司提供 (version=4.10.1196.0, id=gmp-widevinecdm)
+1560156954923	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present in Add-on Manager: webcompat-reporter@mozilla.org
+1560156954923	Sync.AddonsReconciler	INFO	Change recorded for webcompat-reporter@mozilla.org
+1560156954923	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 2 webcompat-reporter@mozilla.org
+1560156954923	Sync.Engine.Addons.Store	DEBUG	webcompat-reporter@mozilla.org not syncable: vetoed by the addon manager.
+1560156954923	Sync.Engine.Addons.Tracker	DEBUG	Ignoring change because add-on isn't syncable: webcompat-reporter@mozilla.org
+1560156954923	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present in Add-on Manager: default-theme@mozilla.org
+1560156954923	Sync.AddonsReconciler	INFO	Change recorded for default-theme@mozilla.org
+1560156954923	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 2 default-theme@mozilla.org
+1560156954923	Sync.Engine.Addons.Store	DEBUG	default-theme@mozilla.org not syncable: vetoed by the addon manager.
+1560156954923	Sync.Engine.Addons.Tracker	DEBUG	Ignoring change because add-on isn't syncable: default-theme@mozilla.org
+1560156954923	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present in Add-on Manager: fxmonitor@mozilla.org
+1560156954923	Sync.AddonsReconciler	INFO	Change recorded for fxmonitor@mozilla.org
+1560156954923	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 2 fxmonitor@mozilla.org
+1560156954923	Sync.Engine.Addons.Store	DEBUG	fxmonitor@mozilla.org not syncable: vetoed by the addon manager.
+1560156954923	Sync.Engine.Addons.Tracker	DEBUG	Ignoring change because add-on isn't syncable: fxmonitor@mozilla.org
+1560156954923	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present in Add-on Manager: firefox-compact-light@mozilla.org
+1560156954923	Sync.AddonsReconciler	INFO	Change recorded for firefox-compact-light@mozilla.org
+1560156954923	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 2 firefox-compact-light@mozilla.org
+1560156954923	Sync.Engine.Addons.Store	DEBUG	firefox-compact-light@mozilla.org not syncable: vetoed by the addon manager.
+1560156954924	Sync.Engine.Addons.Tracker	DEBUG	Ignoring change because add-on isn't syncable: firefox-compact-light@mozilla.org
+1560156954924	Sync.AddonsReconciler	DEBUG	Adding change because add-on not present in Add-on Manager: firefox-compact-dark@mozilla.org
+1560156954924	Sync.AddonsReconciler	INFO	Change recorded for firefox-compact-dark@mozilla.org
+1560156954924	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 2 firefox-compact-dark@mozilla.org
+1560156954924	Sync.Engine.Addons.Store	DEBUG	firefox-compact-dark@mozilla.org not syncable: vetoed by the addon manager.
+1560156954924	Sync.Engine.Addons.Tracker	DEBUG	Ignoring change because add-on isn't syncable: firefox-compact-dark@mozilla.org
+1560156954925	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1560156954929	Sync.Engine.Addons.Store	DEBUG	baidu-code-update@mozillaonline.com not syncable: vetoed by the addon manager.
+1560156954929	Sync.Engine.Addons.Store	DEBUG	gmp-gmpopenh264 not syncable: type not in whitelist: plugin
+1560156954929	Sync.Engine.Addons.Store	DEBUG	jaws-esr@mozilla.org not syncable: vetoed by the addon manager.
+1560156954929	Sync.Engine.Addons.Store	DEBUG	langpack-be@firefox-esr.mozilla.org not syncable: type not in whitelist: locale
+1560156954929	Sync.Engine.Addons.Store	DEBUG	gmp-gmpopenh264 not syncable: type not in whitelist: plugin
+1560156954929	Sync.Engine.Addons.Store	DEBUG	webcompat-reporter@mozilla.org not syncable: vetoed by the addon manager.
+1560156954929	Sync.Engine.Addons.Store	DEBUG	default-theme@mozilla.org not syncable: vetoed by the addon manager.
+1560156954929	Sync.Engine.Addons.Store	DEBUG	fxmonitor@mozilla.org not syncable: vetoed by the addon manager.
+1560156954930	Sync.Engine.Addons.Store	DEBUG	firefox-compact-light@mozilla.org not syncable: vetoed by the addon manager.
+1560156954930	Sync.Engine.Addons.Store	DEBUG	firefox-compact-dark@mozilla.org not syncable: vetoed by the addon manager.
+1560156954930	Sync.Engine.Addons	INFO	0 outgoing items pre-reconciliation
+1560156954931	Sync.Engine.Addons	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1560156954933	Sync.Engine.Forms	INFO	3 outgoing items pre-reconciliation
+1560156954933	Sync.Engine.Forms	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1560156954938	Sync.Engine.Forms	INFO	Posting 3 records of 760 bytes with batch=true
+1560156954939	Sync.Collection	DEBUG	POST Length: 760
+1560156955271	Sync.Collection	DEBUG	POST success 200 https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/storage/forms?batch=true&commit=true
+1560156955277	Sync.Engine.History	INFO	85 outgoing items pre-reconciliation
+1560156955278	Sync.Engine.History	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1560156955364	Sync.Engine.History	INFO	Posting 85 records of 36293 bytes with batch=true
+1560156955364	Sync.Collection	DEBUG	POST Length: 36293
+1560156955900	Sync.Collection	DEBUG	POST success 200 https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/storage/history?batch=true&commit=true
+1560156955902	Sync.Engine.Extension-Storage	DEBUG	Syncing extension settings for ["enhancerforyoutube@maximerf.addons.mozilla.org","{bee6eb20-01e0-ebd1-da83-080329fb9a3a}","languagetool-webextension@languagetool.org"]
+1560156955929	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1545468163188.
+1560156955929	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1560156955929	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1560156955929	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for enhancerforyoutube@maximerf.addons.mozilla.org
+1560156955929	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {bee6eb20-01e0-ebd1-da83-080329fb9a3a}
+1560156955930	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for languagetool-webextension@languagetool.org
+1560156955930	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1560156955930	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1560156955930	Sync.CollectionKeyManager	INFO	Bumping last modified to 1545468163188
+1560156956044	FirefoxAccounts	DEBUG	getOAuthToken enter
+1560156956044	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1560156956044	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1560156956047	FirefoxAccounts	DEBUG	getOAuthToken enter
+1560156956047	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1560156956047	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1560156956049	FirefoxAccounts	DEBUG	getOAuthToken enter
+1560156956049	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1560156956049	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1560156957573	Sync.Engine.Extension-Storage	ERROR	Syncing enhancerforyoutube@maximerf.addons.mozilla.org: request failed: Error: HTTP 401 Unauthorized: Missing Authorization Token (Please authenticate yourself to use this endpoint.) (resource://services-common/kinto-http-client.js:2340:5) JS Stack trace: ServerResponse@kinto-http-client.js:2340:5
+processResponse@kinto-http-client.js:2468:13
+1560156957573	Sync.Engine.Extension-Storage	INFO	Token might have expired
+1560156957575	FirefoxAccounts	DEBUG	FxAccountsOAuthGrantClient Initialized
+1560156957575	Services.Common.RESTRequest	DEBUG	POST request to https://oauth.accounts.firefox.com/v1/destroy
+1560156957575	Services.Common.RESTRequest	TRACE	HTTP Header accept: application/json
+1560156957575	Services.Common.RESTRequest	TRACE	HTTP Header content-type: application/json
+1560156957575	Services.Common.RESTRequest	DEBUG	POST Length: 76
+1560156957575	Services.Common.RESTRequest	TRACE	POST Body: {"token":"ffcc376b0013f7b6e3514dcc25e20fbfc9f22c2eb3db098e8f94bd4d0ef8e9b2"}
+1560156957576	FirefoxAccounts	DEBUG	_updateAccountData with items: ["oauthTokens"]
+1560156957576	FirefoxAccounts	DEBUG	getOAuthToken enter
+1560156957576	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified","oauthTokens","profileCache","device","deviceId","deviceRegistrationVersion"]
+1560156957576	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified","oauthTokens","profileCache","device","deviceId","deviceRegistrationVersion"]
+1560156957577	FirefoxAccounts	DEBUG	FxAccountsOAuthGrantClient Initialized
+1560156957577	FirefoxAccounts	DEBUG	getOAuthToken fetching new token from: https://oauth.accounts.firefox.com/v1
+1560156957577	FirefoxAccounts	DEBUG	enter getAssertion()
+1560156957577	FirefoxAccounts	DEBUG	getKeypairAndCertificate: already have keyPair and certificate
+1560156957577	FirefoxAccounts	DEBUG	getAssertionFromCert
+1560156957578	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1560156957578	Services.Common.RESTRequest	DEBUG	POST request to https://oauth.accounts.firefox.com/v1/authorization
+1560156957579	Services.Common.RESTRequest	TRACE	HTTP Header accept: application/json
+1560156957579	Services.Common.RESTRequest	TRACE	HTTP Header content-type: application/json
+1560156957579	Services.Common.RESTRequest	DEBUG	POST Length: 2335
+1560156957579	Services.Common.RESTRequest	TRACE	POST Body: {"scope":"sync:addon_storage","client_id":"5882386c6d801776","assertion":"eyJhbGciOiJSUzI1NiJ9.eyJwdWJsaWMta2V5Ijp7ImFsZ29yaXRobSI6IkRTIiwieSI6IkU2OEVGNTM5NDQ1OUIzNkQwMUQwRTcwRjVGRjRENTYwMTc2NzVBNDUxMTkyQkY5M0RBM0YyRjlDQ0U1NDU5MkVGOEVDNDExRTJCNUNCNEZFNTg5ODdEMEUyMzYwMjAyOEM3QjcyQTkzODlDOUM1OERGRkIzRDkwQ0JCM0U2M0I1MzE3QkRDODlEMEM2RkFEREU2RkE5RDQ2MTJCNzZCOUUyRjY1NDhBQkU3REM4NDA2OTE3MTY3MTkxRTI4NEVFQkQ4QTcwRUVCRTRGMDQyNjVENDcwMTA5RDIxQjZCRjhDNTE3RTlDQUIwNzNFQkNCQjBDNkFBRkY0QkI0MTBFRkIiLCJwIjoiRkY2MDA0ODNEQjZBQkZDNUI0NUVBQjc4NTk0QjM1MzNENTUwRDlGMUJGMkE5OTJBN0E4REFBNkRDMzRGODA0NUFENEU2RTBDNDI5RDMzNEVFRUFBRUZEN0UyM0Q0ODEwQkUwMEU0Q0MxNDkyQ0JBMzI1QkE4MUZGMkQ1QTVCMzA1QThEMTdFQjNCRjRBMDZBMzQ5RDM5MkUwMEQzMjk3NDRBNTE3OTM4MDM0NEU4MkExOEM0NzkzMzQzOEY4OTFFMjJBRUVGODEyRDY5QzhGNzVFMzI2Q0I3MEVBMDAwQzNGNzc2REZEQkQ2MDQ2MzhDMkVGNzE3RkMyNkQwMkUxNyIsInEiOiJFMjFFMDRGOTExRDFFRDc5OTEwMDhFQ0FBQjNCRjc3NTk4NDMwOUMzIiwiZyI6IkM1MkE0QTBGRjNCN0U2MUZERjE4NjdDRTg0MTM4MzY5QTYxNTRGNEFGQTkyOTY2RTNDODI3RTI1Q0ZBNkNGNTA4QjkwRTVERTQxOUUxMzM3RTA3QTJFOUUyQTNDRDVERUE3MDREMTc1RjhFQkY2QUYzOTdENjlFMTEwQjk2QUZCMTdDN0EwMzI1OTMyOUU0ODI5QjBEMDNCQkM3ODk2QjE1QjRBREU1M0UxMzA4NThDQzM0RDk2MjY5QUE4OTA0MUY0MDkxMzZDNzI0MkEzODg5NUM5RDVCQ0NBRDRGMzg5QUYxRDdBNEJEMTM5OEJEMDcyREZGQTg5NjIzMzM5N0EifSwicHJpbmNpcGFsIjp7ImVtYWlsIjoiMDFhNzk2OGNiNTIyNGNlZmJjMmQ5MDFjYzI4NjI2YmVAYXBpLmFjY291bnRzLmZpcmVmb3guY29tIn0sImlhdCI6MTU2MDE1NjkyNjkyOCwiZXhwIjoxNTYwMTc4NTM2OTI4LCJmeGEtZ2VuZXJhdGlvbiI6MTQ5NjA1OTU1ODg5MywiZnhhLWxhc3RBdXRoQXQiOjE1MzE3MjkzNjIsImZ4YS12ZXJpZmllZEVtYWlsIjoiMTUxNzE2ODM5NTNAMTYzLkNPTSIsImZ4YS1kZXZpY2VJZCI6ImZjM2M1ZmMzMjI5MDU2MDI1Yzc0NjNmMzYyODAxMjdlIiwiZnhhLXRva2VuVmVyaWZpZWQiOnRydWUsImZ4YS1hbXIiOlsicHdkIiwiZW1haWwiXSwiZnhhLWFhbCI6MSwiZnhhLXByb2ZpbGVDaGFuZ2VkQXQiOjE0OTYwNTk1NTg4OTMsImlzcyI6ImFwaS5hY2NvdW50cy5maXJlZm94LmNvbSJ9.jPlOmVWT2_wjbmY3VUQTwCmy7lbrqlWhhHtcf-2gOSwOIJ7AJ1bik6MyoU9UG34PR5D5VHW9OsZKXwvkGXoSXmpRPhsDMzQsQTmSdxlYaQALryBuT5PpXj0wZYvAUL7UdhbFpjxrZsnu6lQ9R9RfxQVP63bthsN8tfkfQJUOltX4pOUkmoIZZSZfORpJ5XYhAjP9ljIs_XuIZHNqtcfOUJ3BUcXX4E7BIQ4ErkgNJ3H0ZPIBK7SS-g7pwkE7LiT0-60X5V4KnFKnloZk8HM7zxLfpRjX3SXZSalC3HbB4iJtyYlfiIxNpR4UDXtLETpeR38X6K9WKta7iJDsbIZDig~eyJhbGciOiJEUzEyOCJ9.eyJleHAiOjIzNDg1NTY5NTcyNDEsImF1ZCI6Imh0dHBzOi8vb2F1dGguYWNjb3VudHMuZmlyZWZveC5jb20vdjEifQ==.eXxuI97z77Zw7EpMif_YwqF3sTd8xLgKGbmpilHtHrYMrvMhGAZIIQ==","response_type":"token"}
+1560156957579	FirefoxAccounts	TRACE	finished write of json user data - took: 3
+1560156957579	FirefoxAccounts	DEBUG	writing secure storage: ["kSync","kXCS","kExtSync","kExtKbHash"]
+1560156957579	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1560156957584	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1560156957972	Sync.Engine.Extension-Storage	ERROR	Syncing {bee6eb20-01e0-ebd1-da83-080329fb9a3a}: request failed: Error: HTTP 401 Unauthorized: Missing Authorization Token (Please authenticate yourself to use this endpoint.) (resource://services-common/kinto-http-client.js:2340:5) JS Stack trace: ServerResponse@kinto-http-client.js:2340:5
+processResponse@kinto-http-client.js:2468:13
+1560156957972	Sync.Engine.Extension-Storage	INFO	Token might have expired
+1560156957972	FirefoxAccounts	DEBUG	getOAuthToken enter
+1560156957973	FirefoxAccounts	DEBUG	FxAccountsOAuthGrantClient Initialized
+1560156957973	FirefoxAccounts	DEBUG	getOAuthToken fetching new token from: https://oauth.accounts.firefox.com/v1
+1560156957973	FirefoxAccounts	DEBUG	enter getAssertion()
+1560156957973	FirefoxAccounts	DEBUG	getKeypairAndCertificate: already have keyPair and certificate
+1560156957973	FirefoxAccounts	DEBUG	getAssertionFromCert
+1560156957974	Sync.Engine.Extension-Storage	ERROR	Syncing languagetool-webextension@languagetool.org: request failed: Error: HTTP 401 Unauthorized: Missing Authorization Token (Please authenticate yourself to use this endpoint.) (resource://services-common/kinto-http-client.js:2340:5) JS Stack trace: ServerResponse@kinto-http-client.js:2340:5
+processResponse@kinto-http-client.js:2468:13
+1560156957974	Sync.Engine.Extension-Storage	INFO	Token might have expired
+1560156957974	FirefoxAccounts	DEBUG	getOAuthToken enter
+1560156957974	FirefoxAccounts	DEBUG	FxAccountsOAuthGrantClient Initialized
+1560156957974	FirefoxAccounts	DEBUG	getOAuthToken fetching new token from: https://oauth.accounts.firefox.com/v1
+1560156957974	FirefoxAccounts	DEBUG	enter getAssertion()
+1560156957974	FirefoxAccounts	DEBUG	getKeypairAndCertificate: already have keyPair and certificate
+1560156957975	FirefoxAccounts	DEBUG	getAssertionFromCert
+1560156957975	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1560156957975	Services.Common.RESTRequest	DEBUG	POST request to https://oauth.accounts.firefox.com/v1/authorization
+1560156957975	Services.Common.RESTRequest	TRACE	HTTP Header accept: application/json
+1560156957975	Services.Common.RESTRequest	TRACE	HTTP Header content-type: application/json
+1560156957975	Services.Common.RESTRequest	DEBUG	POST Length: 2335
+1560156957975	Services.Common.RESTRequest	TRACE	POST Body: {"scope":"sync:addon_storage","client_id":"5882386c6d801776","assertion":"eyJhbGciOiJSUzI1NiJ9.eyJwdWJsaWMta2V5Ijp7ImFsZ29yaXRobSI6IkRTIiwieSI6IkU2OEVGNTM5NDQ1OUIzNkQwMUQwRTcwRjVGRjRENTYwMTc2NzVBNDUxMTkyQkY5M0RBM0YyRjlDQ0U1NDU5MkVGOEVDNDExRTJCNUNCNEZFNTg5ODdEMEUyMzYwMjAyOEM3QjcyQTkzODlDOUM1OERGRkIzRDkwQ0JCM0U2M0I1MzE3QkRDODlEMEM2RkFEREU2RkE5RDQ2MTJCNzZCOUUyRjY1NDhBQkU3REM4NDA2OTE3MTY3MTkxRTI4NEVFQkQ4QTcwRUVCRTRGMDQyNjVENDcwMTA5RDIxQjZCRjhDNTE3RTlDQUIwNzNFQkNCQjBDNkFBRkY0QkI0MTBFRkIiLCJwIjoiRkY2MDA0ODNEQjZBQkZDNUI0NUVBQjc4NTk0QjM1MzNENTUwRDlGMUJGMkE5OTJBN0E4REFBNkRDMzRGODA0NUFENEU2RTBDNDI5RDMzNEVFRUFBRUZEN0UyM0Q0ODEwQkUwMEU0Q0MxNDkyQ0JBMzI1QkE4MUZGMkQ1QTVCMzA1QThEMTdFQjNCRjRBMDZBMzQ5RDM5MkUwMEQzMjk3NDRBNTE3OTM4MDM0NEU4MkExOEM0NzkzMzQzOEY4OTFFMjJBRUVGODEyRDY5QzhGNzVFMzI2Q0I3MEVBMDAwQzNGNzc2REZEQkQ2MDQ2MzhDMkVGNzE3RkMyNkQwMkUxNyIsInEiOiJFMjFFMDRGOTExRDFFRDc5OTEwMDhFQ0FBQjNCRjc3NTk4NDMwOUMzIiwiZyI6IkM1MkE0QTBGRjNCN0U2MUZERjE4NjdDRTg0MTM4MzY5QTYxNTRGNEFGQTkyOTY2RTNDODI3RTI1Q0ZBNkNGNTA4QjkwRTVERTQxOUUxMzM3RTA3QTJFOUUyQTNDRDVERUE3MDREMTc1RjhFQkY2QUYzOTdENjlFMTEwQjk2QUZCMTdDN0EwMzI1OTMyOUU0ODI5QjBEMDNCQkM3ODk2QjE1QjRBREU1M0UxMzA4NThDQzM0RDk2MjY5QUE4OTA0MUY0MDkxMzZDNzI0MkEzODg5NUM5RDVCQ0NBRDRGMzg5QUYxRDdBNEJEMTM5OEJEMDcyREZGQTg5NjIzMzM5N0EifSwicHJpbmNpcGFsIjp7ImVtYWlsIjoiMDFhNzk2OGNiNTIyNGNlZmJjMmQ5MDFjYzI4NjI2YmVAYXBpLmFjY291bnRzLmZpcmVmb3guY29tIn0sImlhdCI6MTU2MDE1NjkyNjkyOCwiZXhwIjoxNTYwMTc4NTM2OTI4LCJmeGEtZ2VuZXJhdGlvbiI6MTQ5NjA1OTU1ODg5MywiZnhhLWxhc3RBdXRoQXQiOjE1MzE3MjkzNjIsImZ4YS12ZXJpZmllZEVtYWlsIjoiMTUxNzE2ODM5NTNAMTYzLkNPTSIsImZ4YS1kZXZpY2VJZCI6ImZjM2M1ZmMzMjI5MDU2MDI1Yzc0NjNmMzYyODAxMjdlIiwiZnhhLXRva2VuVmVyaWZpZWQiOnRydWUsImZ4YS1hbXIiOlsicHdkIiwiZW1haWwiXSwiZnhhLWFhbCI6MSwiZnhhLXByb2ZpbGVDaGFuZ2VkQXQiOjE0OTYwNTk1NTg4OTMsImlzcyI6ImFwaS5hY2NvdW50cy5maXJlZm94LmNvbSJ9.jPlOmVWT2_wjbmY3VUQTwCmy7lbrqlWhhHtcf-2gOSwOIJ7AJ1bik6MyoU9UG34PR5D5VHW9OsZKXwvkGXoSXmpRPhsDMzQsQTmSdxlYaQALryBuT5PpXj0wZYvAUL7UdhbFpjxrZsnu6lQ9R9RfxQVP63bthsN8tfkfQJUOltX4pOUkmoIZZSZfORpJ5XYhAjP9ljIs_XuIZHNqtcfOUJ3BUcXX4E7BIQ4ErkgNJ3H0ZPIBK7SS-g7pwkE7LiT0-60X5V4KnFKnloZk8HM7zxLfpRjX3SXZSalC3HbB4iJtyYlfiIxNpR4UDXtLETpeR38X6K9WKta7iJDsbIZDig~eyJhbGciOiJEUzEyOCJ9.eyJleHAiOjIzNDg1NTY5NTc2MzcsImF1ZCI6Imh0dHBzOi8vb2F1dGguYWNjb3VudHMuZmlyZWZveC5jb20vdjEifQ==.wo3OF1kxDrSg1o0kJUZsiW6pGuUM4vgQC1elqK3kXR4o6uTaHcRX5Q==","response_type":"token"}
+1560156957976	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1560156957976	Services.Common.RESTRequest	DEBUG	POST request to https://oauth.accounts.firefox.com/v1/authorization
+1560156957976	Services.Common.RESTRequest	TRACE	HTTP Header accept: application/json
+1560156957976	Services.Common.RESTRequest	TRACE	HTTP Header content-type: application/json
+1560156957976	Services.Common.RESTRequest	DEBUG	POST Length: 2335
+1560156957976	Services.Common.RESTRequest	TRACE	POST Body: {"scope":"sync:addon_storage","client_id":"5882386c6d801776","assertion":"eyJhbGciOiJSUzI1NiJ9.eyJwdWJsaWMta2V5Ijp7ImFsZ29yaXRobSI6IkRTIiwieSI6IkU2OEVGNTM5NDQ1OUIzNkQwMUQwRTcwRjVGRjRENTYwMTc2NzVBNDUxMTkyQkY5M0RBM0YyRjlDQ0U1NDU5MkVGOEVDNDExRTJCNUNCNEZFNTg5ODdEMEUyMzYwMjAyOEM3QjcyQTkzODlDOUM1OERGRkIzRDkwQ0JCM0U2M0I1MzE3QkRDODlEMEM2RkFEREU2RkE5RDQ2MTJCNzZCOUUyRjY1NDhBQkU3REM4NDA2OTE3MTY3MTkxRTI4NEVFQkQ4QTcwRUVCRTRGMDQyNjVENDcwMTA5RDIxQjZCRjhDNTE3RTlDQUIwNzNFQkNCQjBDNkFBRkY0QkI0MTBFRkIiLCJwIjoiRkY2MDA0ODNEQjZBQkZDNUI0NUVBQjc4NTk0QjM1MzNENTUwRDlGMUJGMkE5OTJBN0E4REFBNkRDMzRGODA0NUFENEU2RTBDNDI5RDMzNEVFRUFBRUZEN0UyM0Q0ODEwQkUwMEU0Q0MxNDkyQ0JBMzI1QkE4MUZGMkQ1QTVCMzA1QThEMTdFQjNCRjRBMDZBMzQ5RDM5MkUwMEQzMjk3NDRBNTE3OTM4MDM0NEU4MkExOEM0NzkzMzQzOEY4OTFFMjJBRUVGODEyRDY5QzhGNzVFMzI2Q0I3MEVBMDAwQzNGNzc2REZEQkQ2MDQ2MzhDMkVGNzE3RkMyNkQwMkUxNyIsInEiOiJFMjFFMDRGOTExRDFFRDc5OTEwMDhFQ0FBQjNCRjc3NTk4NDMwOUMzIiwiZyI6IkM1MkE0QTBGRjNCN0U2MUZERjE4NjdDRTg0MTM4MzY5QTYxNTRGNEFGQTkyOTY2RTNDODI3RTI1Q0ZBNkNGNTA4QjkwRTVERTQxOUUxMzM3RTA3QTJFOUUyQTNDRDVERUE3MDREMTc1RjhFQkY2QUYzOTdENjlFMTEwQjk2QUZCMTdDN0EwMzI1OTMyOUU0ODI5QjBEMDNCQkM3ODk2QjE1QjRBREU1M0UxMzA4NThDQzM0RDk2MjY5QUE4OTA0MUY0MDkxMzZDNzI0MkEzODg5NUM5RDVCQ0NBRDRGMzg5QUYxRDdBNEJEMTM5OEJEMDcyREZGQTg5NjIzMzM5N0EifSwicHJpbmNpcGFsIjp7ImVtYWlsIjoiMDFhNzk2OGNiNTIyNGNlZmJjMmQ5MDFjYzI4NjI2YmVAYXBpLmFjY291bnRzLmZpcmVmb3guY29tIn0sImlhdCI6MTU2MDE1NjkyNjkyOCwiZXhwIjoxNTYwMTc4NTM2OTI4LCJmeGEtZ2VuZXJhdGlvbiI6MTQ5NjA1OTU1ODg5MywiZnhhLWxhc3RBdXRoQXQiOjE1MzE3MjkzNjIsImZ4YS12ZXJpZmllZEVtYWlsIjoiMTUxNzE2ODM5NTNAMTYzLkNPTSIsImZ4YS1kZXZpY2VJZCI6ImZjM2M1ZmMzMjI5MDU2MDI1Yzc0NjNmMzYyODAxMjdlIiwiZnhhLXRva2VuVmVyaWZpZWQiOnRydWUsImZ4YS1hbXIiOlsicHdkIiwiZW1haWwiXSwiZnhhLWFhbCI6MSwiZnhhLXByb2ZpbGVDaGFuZ2VkQXQiOjE0OTYwNTk1NTg4OTMsImlzcyI6ImFwaS5hY2NvdW50cy5maXJlZm94LmNvbSJ9.jPlOmVWT2_wjbmY3VUQTwCmy7lbrqlWhhHtcf-2gOSwOIJ7AJ1bik6MyoU9UG34PR5D5VHW9OsZKXwvkGXoSXmpRPhsDMzQsQTmSdxlYaQALryBuT5PpXj0wZYvAUL7UdhbFpjxrZsnu6lQ9R9RfxQVP63bthsN8tfkfQJUOltX4pOUkmoIZZSZfORpJ5XYhAjP9ljIs_XuIZHNqtcfOUJ3BUcXX4E7BIQ4ErkgNJ3H0ZPIBK7SS-g7pwkE7LiT0-60X5V4KnFKnloZk8HM7zxLfpRjX3SXZSalC3HbB4iJtyYlfiIxNpR4UDXtLETpeR38X6K9WKta7iJDsbIZDig~eyJhbGciOiJEUzEyOCJ9.eyJleHAiOjIzNDg1NTY5NTc2MzksImF1ZCI6Imh0dHBzOi8vb2F1dGguYWNjb3VudHMuZmlyZWZveC5jb20vdjEifQ==.IkqfSKAYIrPWA0Vk6Qb-YHmYBQ1MjWSYX9zwspl6ggiAebFSHWcE6g==","response_type":"token"}
+1560156958577	Services.Common.RESTRequest	TRACE	onStartRequest: POST https://oauth.accounts.firefox.com/v1/destroy
+1560156958577	Services.Common.RESTRequest	TRACE	Channel for POST https://oauth.accounts.firefox.com/v1/destroy returned status code 0
+1560156958578	Services.Common.RESTRequest	DEBUG	POST https://oauth.accounts.firefox.com/v1/destroy 400
+1560156958578	Services.Common.RESTRequest	TRACE	POST body: {"code":400,"errno":108,"error":"Bad Request","message":"Invalid token","info":"https://github.com/mozilla/fxa-oauth-server/blob/master/docs/api.md#errors"}
+1560156958578	FirefoxAccounts	WARN	FxA failed to revoke a cached token: {"name":"FxAccountsOAuthGrantClientError","code":400,"errno":1108,"error":"Bad Request","message":"Invalid token"}
+1560156958578	Services.Common.RESTRequest	TRACE	onStartRequest: POST https://oauth.accounts.firefox.com/v1/authorization
+1560156958579	Services.Common.RESTRequest	TRACE	Channel for POST https://oauth.accounts.firefox.com/v1/authorization returned status code 0
+1560156958579	Services.Common.RESTRequest	DEBUG	POST https://oauth.accounts.firefox.com/v1/authorization 200
+1560156958579	Services.Common.RESTRequest	TRACE	POST body: {"access_token":"7d9623fbc52acff6ea81934d93344781726b426a91301925a1f35cb58b7eca6a","token_type":"bearer","scope":"sync:addon_storage","expires_in":259200,"auth_at":1531729362}
+1560156958580	FirefoxAccounts	DEBUG	_updateAccountData with items: ["oauthTokens"]
+1560156958580	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified","oauthTokens","profileCache","device","deviceId","deviceRegistrationVersion"]
+1560156958580	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified","oauthTokens","profileCache","device","deviceId","deviceRegistrationVersion"]
+1560156958582	FirefoxAccounts	TRACE	finished write of json user data - took: 2
+1560156958582	FirefoxAccounts	DEBUG	writing secure storage: ["kSync","kXCS","kExtSync","kExtKbHash"]
+1560156958582	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1560156958589	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1560156958862	Services.Common.RESTRequest	TRACE	onStartRequest: POST https://oauth.accounts.firefox.com/v1/authorization
+1560156958862	Services.Common.RESTRequest	TRACE	Channel for POST https://oauth.accounts.firefox.com/v1/authorization returned status code 0
+1560156958862	Services.Common.RESTRequest	DEBUG	POST https://oauth.accounts.firefox.com/v1/authorization 200
+1560156958862	Services.Common.RESTRequest	TRACE	POST body: {"access_token":"3ae2dada4b9f33c75ffcad58f746751040e4c601ef6c70b26299361db8c579b9","token_type":"bearer","scope":"sync:addon_storage","expires_in":259200,"auth_at":1531729362}
+1560156958862	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1560156958862	FirefoxAccounts	DEBUG	Detected a race for this token - revoking the new one.
+1560156958863	FirefoxAccounts	DEBUG	FxAccountsOAuthGrantClient Initialized
+1560156958863	Services.Common.RESTRequest	DEBUG	POST request to https://oauth.accounts.firefox.com/v1/destroy
+1560156958863	Services.Common.RESTRequest	TRACE	HTTP Header accept: application/json
+1560156958863	Services.Common.RESTRequest	TRACE	HTTP Header content-type: application/json
+1560156958863	Services.Common.RESTRequest	DEBUG	POST Length: 76
+1560156958863	Services.Common.RESTRequest	TRACE	POST Body: {"token":"3ae2dada4b9f33c75ffcad58f746751040e4c601ef6c70b26299361db8c579b9"}
+1560156958877	Services.Common.RESTRequest	TRACE	onStartRequest: POST https://oauth.accounts.firefox.com/v1/authorization
+1560156958878	Services.Common.RESTRequest	TRACE	Channel for POST https://oauth.accounts.firefox.com/v1/authorization returned status code 0
+1560156958878	Services.Common.RESTRequest	DEBUG	POST https://oauth.accounts.firefox.com/v1/authorization 200
+1560156958878	Services.Common.RESTRequest	TRACE	POST body: {"access_token":"e8e52207ab8991aec8e99b14c98ac1492d46a67489aaf9970266edfd8633abe1","token_type":"bearer","scope":"sync:addon_storage","expires_in":259200,"auth_at":1531729362}
+1560156958878	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1560156958878	FirefoxAccounts	DEBUG	Detected a race for this token - revoking the new one.
+1560156958878	FirefoxAccounts	DEBUG	FxAccountsOAuthGrantClient Initialized
+1560156958879	Services.Common.RESTRequest	DEBUG	POST request to https://oauth.accounts.firefox.com/v1/destroy
+1560156958879	Services.Common.RESTRequest	TRACE	HTTP Header accept: application/json
+1560156958879	Services.Common.RESTRequest	TRACE	HTTP Header content-type: application/json
+1560156958879	Services.Common.RESTRequest	DEBUG	POST Length: 76
+1560156958879	Services.Common.RESTRequest	TRACE	POST Body: {"token":"e8e52207ab8991aec8e99b14c98ac1492d46a67489aaf9970266edfd8633abe1"}
+1560156959161	Services.Common.RESTRequest	TRACE	onStartRequest: POST https://oauth.accounts.firefox.com/v1/destroy
+1560156959161	Services.Common.RESTRequest	TRACE	Channel for POST https://oauth.accounts.firefox.com/v1/destroy returned status code 0
+1560156959161	Services.Common.RESTRequest	DEBUG	POST https://oauth.accounts.firefox.com/v1/destroy 200
+1560156959161	Services.Common.RESTRequest	TRACE	POST body: {}
+1560156959188	Services.Common.RESTRequest	TRACE	onStartRequest: POST https://oauth.accounts.firefox.com/v1/destroy
+1560156959189	Services.Common.RESTRequest	TRACE	Channel for POST https://oauth.accounts.firefox.com/v1/destroy returned status code 0
+1560156959189	Services.Common.RESTRequest	DEBUG	POST https://oauth.accounts.firefox.com/v1/destroy 200
+1560156959189	Services.Common.RESTRequest	TRACE	POST body: {}
+1560156959959	Sync.Doctor	INFO	Skipping check of prefs - disabled via preferences
+1560156959960	Sync.Doctor	INFO	Skipping check of passwords - disabled via preferences
+1560156959960	Sync.Doctor	INFO	Skipping check of tabs - disabled via preferences
+1560156959960	Sync.Doctor	INFO	Skipping check of bookmarks - disabled via preferences
+1560156959960	Sync.Doctor	INFO	Skipping check of addons - disabled via preferences
+1560156959960	Sync.Doctor	INFO	Skipping check of forms - disabled via preferences
+1560156959960	Sync.Doctor	INFO	Skipping check of history - disabled via preferences
+1560156959960	Sync.Doctor	INFO	Skipping check of extension-storage - disabled via preferences
+1560156959960	Sync.Doctor	INFO	Skipping validation: no engines qualify
+1560156959962	Sync.Doctor	INFO	bookmarks reparier did not advance.
+1560156959963	Sync.Status	DEBUG	Status.sync: success.sync => success.sync
+1560156959963	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1560156959963	Sync.Synchronizer	INFO	Sync completed at 2019-06-10 16:55:59 after 13.86 secs.
+1560156959964	Sync.Declined	DEBUG	Handling remote declined: []
+1560156959964	Sync.Declined	DEBUG	Handling local declined: []
+1560156959964	Sync.Declined	DEBUG	Declined changed? false
+1560156959964	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1560156959965	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1560156959969	Sync.ErrorHandler	DEBUG	Addons installed: 12
+1560156959969	Sync.ErrorHandler	DEBUG	 - Emoji Cheatsheet for GitHub, Basecamp etc., version 2.0.1, id jid1-Xo5SuA6qc1DFpw@jetpack
+1560156959969	Sync.ErrorHandler	DEBUG	 - YouTube™ Flash® Player, version 2.0.2, id jid1-HAV2inXAnQPIeA@jetpack
+1560156959969	Sync.ErrorHandler	DEBUG	 - Flash Video Player for Facebook™, version 64.1.0, id {d0bfdcce-52c7-4b32-bb45-948f62db8d3f}
+1560156959969	Sync.ErrorHandler	DEBUG	 - YouTube Flash Video Player, version 64.0.0, id {f3bd3dd2-2888-44c5-91a2-2caeb33fb898}
+1560156959969	Sync.ErrorHandler	DEBUG	 - Flash-HTML5 for YouTube™, version 0.1.9, id jid1-o2qEVrZ4t5FJWu@jetpack
+1560156959969	Sync.ErrorHandler	DEBUG	 - Flash and Video Download, version 3.2.1, id {bee6eb20-01e0-ebd1-da83-080329fb9a3a}
+1560156959969	Sync.ErrorHandler	DEBUG	 - 网页截图, version 3.67, id easyscreenshot@mozillaonline.com
+1560156959969	Sync.ErrorHandler	DEBUG	 - 附加组件管理器, version 4.67.3, id cpmanager@mozillaonline.com
+1560156959969	Sync.ErrorHandler	DEBUG	 - 百度网盘助手, version 1.0.1, id {4541271a-93bf-4c96-9f87-0b0f8c6ee54c}
+1560156959970	Sync.ErrorHandler	DEBUG	 - Enhancer for YouTube™, version 2.0.91, id enhancerforyoutube@maximerf.addons.mozilla.org
+1560156959970	Sync.ErrorHandler	DEBUG	 - 火狐主页, version 3.67.4, id cehomepage@mozillaonline.com
+1560156959970	Sync.ErrorHandler	DEBUG	 - Grammar and Spell Checker - LanguageTool, version 2.1.16, id languagetool-webextension@languagetool.org

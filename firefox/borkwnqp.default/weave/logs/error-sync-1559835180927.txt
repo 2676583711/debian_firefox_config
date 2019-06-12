@@ -1,0 +1,220 @@
+1559833607198	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1559835170369	Sync.SyncScheduler	DEBUG	Global Score threshold hit, triggering sync.
+1559835170373	Sync.Service	DEBUG	User-Agent: Firefox/67.0 (Linux x86_64) FxSync/1.69.0.20190516215225.desktop
+1559835170373	Sync.Service	INFO	Starting sync at 2019-06-06 23:32:50 in browser session wC6SWnYVKdHO
+1559835170373	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1559835170378	Sync.Status	INFO	Resetting Status.
+1559835170378	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1559835171582	Sync.Resource	DEBUG	GET success 200 https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/info/collections
+1559835171584	Sync.Service	DEBUG	Fetching server configuration: https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/info/configuration
+1559835171987	Sync.Resource	DEBUG	GET success 200 https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/info/configuration
+1559835171987	Sync.Service	DEBUG	Fetching global metadata record
+1559835171987	Sync.Service	DEBUG	Weave Version: 1.69.0 Local Storage: 5 Remote Storage: 5
+1559835171987	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1559835171987	Sync.Service	INFO	Testing info/collections: {"passwords":1558796884.14,"addons":1558075909.55,"tabs":1559833604.87,"clients":1559807744.27,"crypto":1496059604.95,"forms":1559723211.2,"meta":1496059620.31,"bookmarks":1559308094.98,"prefs":1551258356.99,"history":1559833605.23}
+1559835171988	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1496059604.95
+1559835171988	Sync.Synchronizer	DEBUG	Refreshing client list.
+1559835171988	Sync.Engine.Clients	INFO	0 outgoing items pre-reconciliation
+1559835171988	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1559835172385	Sync.Collection	DEBUG	GET success 200 https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/storage/clients?full=1&limit=1000
+1559835172388	Sync.Engine.Clients	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 1 reconciled.
+1559835172389	Services.Common.RESTRequest	TRACE	local time, offset: 1559835172389, -1172
+1559835172390	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/account/devices
+1559835172390	Services.Common.RESTRequest	TRACE	HTTP Header authorization: ***** (suppressed)
+1559835172390	Services.Common.RESTRequest	TRACE	HTTP Header content-type: text/plain
+1559835172390	Services.Common.RESTRequest	TRACE	HTTP Header accept-language: zh-CN, zh, zh-TW, zh-HK, en-US, en
+1559835173771	Services.Common.RESTRequest	TRACE	onStartRequest: GET https://api.accounts.firefox.com/v1/account/devices
+1559835173775	Services.Common.RESTRequest	TRACE	Channel for GET https://api.accounts.firefox.com/v1/account/devices returned status code 0
+1559835173775	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/account/devices 200
+1559835173775	Hawk	DEBUG	(Response) /account/devices: code: 200 - Status text: OK
+1559835173775	Services.Common.RESTResponse	TRACE	Processing response headers.
+1559835173775	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -775
+1559835173776	Sync.Engine.Clients	DEBUG	Refreshing the known stale clients list
+1559835173776	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1559835173780	Sync.Synchronizer	INFO	Updating enabled engines: 1 clients.
+1559835173781	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1559835173781	Sync.Engine.Prefs	INFO	0 outgoing items pre-reconciliation
+1559835173782	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1559835173784	Sync.Engine.Passwords	INFO	0 outgoing items pre-reconciliation
+1559835173785	Sync.Engine.Passwords	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1559835173786	Sync.Engine.Tabs	INFO	1 outgoing items pre-reconciliation
+1559835173787	Sync.Engine.Tabs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1559835173822	Sync.Engine.Tabs	INFO	Posting 1 records of 32933 bytes with batch=true
+1559835173824	Sync.Collection	DEBUG	POST Length: 32933
+1559835174778	Sync.Collection	DEBUG	POST success 200 https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/storage/tabs?batch=true&commit=true
+1559835174780	Sync.Engine.Bookmarks	DEBUG	Checking if server sync ID hNXSaBdTo79o matches existing
+1559835174781	Sync.Engine.Bookmarks	INFO	0 outgoing items pre-reconciliation
+1559835174782	Sync.Engine.Bookmarks	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1559835174785	Sync.Engine.Bookmarks.BookmarkSyncUtils	DEBUG	pushChanges: Processed change records: {"weak":0,"skipped":0,"updated":0}
+1559835174786	Sync.Engine.Addons	DEBUG	Refreshing reconciler state
+1559835174786	Sync.AddonsReconciler	INFO	Refreshing global state from AddonManager.
+1559835174788	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Emoji Cheatsheet for GitHub, Basecamp etc. (version=2.0.1, id=jid1-Xo5SuA6qc1DFpw@jetpack)
+1559835174788	Sync.AddonsReconciler	DEBUG	Rectifying state for addon YouTube™ Flash® Player (version=2.0.2, id=jid1-HAV2inXAnQPIeA@jetpack)
+1559835174788	Sync.AddonsReconciler	DEBUG	Rectifying state for addon FlashGot (version=1.5.6.14, id={19503e42-ca3c-4c27-b1e2-9cdb2170ee34})
+1559835174789	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Flash Video Player for Facebook™ (version=64.1.0, id={d0bfdcce-52c7-4b32-bb45-948f62db8d3f})
+1559835174789	Sync.AddonsReconciler	DEBUG	Rectifying state for addon YouTube Flash Video Player (version=64.0.0, id={f3bd3dd2-2888-44c5-91a2-2caeb33fb898})
+1559835174789	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Flash-HTML5 for YouTube™ (version=0.1.9, id=jid1-o2qEVrZ4t5FJWu@jetpack)
+1559835174789	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Flash and Video Download (version=3.2.1, id={bee6eb20-01e0-ebd1-da83-080329fb9a3a})
+1559835174789	Sync.AddonsReconciler	DEBUG	Rectifying state for addon 标签页优化 (version=5.67, id=tabtweak@mozillaonline.com)
+1559835174789	Sync.AddonsReconciler	DEBUG	Rectifying state for addon 网页截图 (version=3.67, id=easyscreenshot@mozillaonline.com)
+1559835174789	Sync.AddonsReconciler	DEBUG	Rectifying state for addon 附加组件管理器 (version=4.67.3, id=cpmanager@mozillaonline.com)
+1559835174790	Sync.AddonsReconciler	DEBUG	Rectifying state for addon 百度网盘助手 (version=1.0.1, id={4541271a-93bf-4c96-9f87-0b0f8c6ee54c})
+1559835174790	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Web Compat (version=4.0.0, id=webcompat@mozilla.org)
+1559835174790	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Form Autofill (version=1.0, id=formautofill@mozilla.org)
+1559835174790	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Firefox Screenshots (version=37.1.0, id=screenshots@mozilla.org)
+1559835174790	Sync.AddonsReconciler	DEBUG	Rectifying state for addon WebCompat Reporter (version=1.1.0, id=webcompat-reporter@mozilla.org)
+1559835174790	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Firefox Monitor (version=3.0, id=fxmonitor@mozilla.org)
+1559835174790	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Enhancer for YouTube™ (version=2.0.91, id=enhancerforyoutube@maximerf.addons.mozilla.org)
+1559835174790	Sync.AddonsReconciler	DEBUG	Rectifying state for addon 火狐主页 (version=3.67.4, id=cehomepage@mozillaonline.com)
+1559835174790	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Grammar and Spell Checker - LanguageTool (version=2.1.16, id=languagetool-webextension@languagetool.org)
+1559835174790	Sync.AddonsReconciler	DEBUG	Rectifying state for addon 默认 (version=, id=default-theme@mozilla.org)
+1559835174791	Sync.AddonsReconciler	DEBUG	Rectifying state for addon 明亮 (version=, id=firefox-compact-light@mozilla.org)
+1559835174791	Sync.AddonsReconciler	DEBUG	Rectifying state for addon 深邃 (version=, id=firefox-compact-dark@mozilla.org)
+1559835174791	Sync.AddonsReconciler	DEBUG	Rectifying state for addon OpenH264 视频编码器，由思科系统公司提供 (version=1.8.1, id=gmp-gmpopenh264)
+1559835174791	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Widevine 内容解密模块，由 Google 公司提供 (version=4.10.1196.0, id=gmp-widevinecdm)
+1559835174794	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1559835174803	Sync.Engine.Addons.Store	DEBUG	baidu-code-update@mozillaonline.com not syncable: vetoed by the addon manager.
+1559835174803	Sync.Engine.Addons.Store	DEBUG	gmp-gmpopenh264 not syncable: type not in whitelist: plugin
+1559835174803	Sync.Engine.Addons	INFO	0 outgoing items pre-reconciliation
+1559835174804	Sync.Engine.Addons	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1559835174805	Sync.Engine.Forms	INFO	0 outgoing items pre-reconciliation
+1559835174806	Sync.Engine.Forms	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1559835174808	Sync.Engine.History	DEBUG	Checking if server sync ID vj5Kn49be0UN matches existing
+1559835174810	Sync.Engine.History	INFO	44 outgoing items pre-reconciliation
+1559835174811	Sync.Engine.History	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1559835174847	Sync.Engine.History	INFO	Posting 44 records of 17968 bytes with batch=true
+1559835174848	Sync.Collection	DEBUG	POST Length: 17968
+1559835175586	Sync.Collection	DEBUG	POST success 200 https://sync-529-us-west-2.sync.services.mozilla.com/1.5/79160689/storage/history?batch=true&commit=true
+1559835175588	Sync.Engine.Extension-Storage	DEBUG	Syncing extension settings for ["enhancerforyoutube@maximerf.addons.mozilla.org","{bee6eb20-01e0-ebd1-da83-080329fb9a3a}","languagetool-webextension@languagetool.org"]
+1559835175592	Sync.CollectionKeyManager	INFO	Setting collection keys contents. Our last modified: 0, input modified: 1545468163188.
+1559835175592	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for [default]
+1559835175592	Sync.CollectionKeyManager	INFO	Processing downloaded per-collection keys.
+1559835175592	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for enhancerforyoutube@maximerf.addons.mozilla.org
+1559835175592	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for {bee6eb20-01e0-ebd1-da83-080329fb9a3a}
+1559835175592	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for languagetool-webextension@languagetool.org
+1559835175592	Sync.CollectionKeyManager	INFO	Clearing collection keys...
+1559835175592	Sync.CollectionKeyManager	INFO	Saving downloaded keys.
+1559835175592	Sync.CollectionKeyManager	INFO	Bumping last modified to 1545468163188
+1559835175688	FirefoxAccounts	DEBUG	getOAuthToken enter
+1559835175688	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1559835175688	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1559835175691	FirefoxAccounts	DEBUG	getOAuthToken enter
+1559835175692	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1559835175692	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1559835175694	FirefoxAccounts	DEBUG	getOAuthToken enter
+1559835175695	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1559835175695	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1559835177561	Sync.Engine.Extension-Storage	ERROR	Syncing languagetool-webextension@languagetool.org: request failed: Error: HTTP 401 Unauthorized: Missing Authorization Token (Please authenticate yourself to use this endpoint.)(resource://services-common/kinto-http-client.js:2645:5) JS Stack trace: ServerResponse@kinto-http-client.js:2645:5
+processResponse@kinto-http-client.js:2792:13
+1559835177562	Sync.Engine.Extension-Storage	INFO	Token might have expired
+1559835177562	FirefoxAccounts	DEBUG	FxAccountsOAuthGrantClient Initialized
+1559835177563	Services.Common.RESTRequest	DEBUG	POST request to https://oauth.accounts.firefox.com/v1/destroy
+1559835177563	Services.Common.RESTRequest	TRACE	HTTP Header accept: application/json
+1559835177563	Services.Common.RESTRequest	TRACE	HTTP Header content-type: application/json
+1559835177563	Services.Common.RESTRequest	DEBUG	POST Length: 76
+1559835177563	Services.Common.RESTRequest	TRACE	POST Body: {"token":"5724692e38f52fa19308bf4a389162095504493aa2993d491b7de8621ea0ddde"}
+1559835177563	FirefoxAccounts	DEBUG	_updateAccountData with items: ["oauthTokens"]
+1559835177563	FirefoxAccounts	DEBUG	getOAuthToken enter
+1559835177563	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified","oauthTokens","profileCache","device"]
+1559835177563	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified","oauthTokens","profileCache","device"]
+1559835177564	FirefoxAccounts	DEBUG	FxAccountsOAuthGrantClient Initialized
+1559835177564	FirefoxAccounts	DEBUG	getOAuthToken fetching new token from: https://oauth.accounts.firefox.com/v1
+1559835177564	FirefoxAccounts	DEBUG	enter getAssertion()
+1559835177564	FirefoxAccounts	DEBUG	getKeypairAndCertificate: already have keyPair and certificate
+1559835177564	FirefoxAccounts	DEBUG	getAssertionFromCert
+1559835177565	Sync.Engine.Extension-Storage	ERROR	Syncing {bee6eb20-01e0-ebd1-da83-080329fb9a3a}: request failed: Error: HTTP 401 Unauthorized: Missing Authorization Token (Please authenticate yourself to use this endpoint.)(resource://services-common/kinto-http-client.js:2645:5) JS Stack trace: ServerResponse@kinto-http-client.js:2645:5
+processResponse@kinto-http-client.js:2792:13
+1559835177565	Sync.Engine.Extension-Storage	INFO	Token might have expired
+1559835177565	FirefoxAccounts	DEBUG	getOAuthToken enter
+1559835177566	FirefoxAccounts	DEBUG	getOAuthToken fetching new token from: https://oauth.accounts.firefox.com/v1
+1559835177566	FirefoxAccounts	DEBUG	enter getAssertion()
+1559835177566	FirefoxAccounts	DEBUG	getKeypairAndCertificate: already have keyPair and certificate
+1559835177566	FirefoxAccounts	DEBUG	getAssertionFromCert
+1559835177566	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1559835177567	Services.Common.RESTRequest	DEBUG	POST request to https://oauth.accounts.firefox.com/v1/authorization
+1559835177567	Services.Common.RESTRequest	TRACE	HTTP Header accept: application/json
+1559835177567	Services.Common.RESTRequest	TRACE	HTTP Header content-type: application/json
+1559835177567	Services.Common.RESTRequest	DEBUG	POST Length: 2335
+1559835177567	Services.Common.RESTRequest	TRACE	POST Body: {"scope":"sync:addon_storage","client_id":"5882386c6d801776","assertion":"eyJhbGciOiJSUzI1NiJ9.eyJwdWJsaWMta2V5Ijp7ImFsZ29yaXRobSI6IkRTIiwieSI6IkNDQ0QzRjNGRTBGNzlERkY4QUNCMzEwNzJGRjg3ODkyNEEwRDlFNDBDRjNBQjExM0Q1ODcxN0MyOTUyQjg5RDBFN0MzOERBNTJBRTBGRUM0NzAxNkJFRDIxRDAzNjMzRUExMDFBOUIxODk5REQ0MkJCODhGNUEwM0I0ODg3RTY5REZDN0Y1Mjk4NTREMTBFN0VBMDdFRDAzMUM2ODZCMzkyQThCN0U1OUJGOUZDRjFCNDdCN0Y5NUJEMUE2NENFQzZCM0IxNDI4MDI1NTFFMTBGMDUxQzNEQTJGMjBENjYyOUM0QzYzRjJCMUY1MzFGNUEzNTZGREJBREUwQTVFNTIiLCJwIjoiRkY2MDA0ODNEQjZBQkZDNUI0NUVBQjc4NTk0QjM1MzNENTUwRDlGMUJGMkE5OTJBN0E4REFBNkRDMzRGODA0NUFENEU2RTBDNDI5RDMzNEVFRUFBRUZEN0UyM0Q0ODEwQkUwMEU0Q0MxNDkyQ0JBMzI1QkE4MUZGMkQ1QTVCMzA1QThEMTdFQjNCRjRBMDZBMzQ5RDM5MkUwMEQzMjk3NDRBNTE3OTM4MDM0NEU4MkExOEM0NzkzMzQzOEY4OTFFMjJBRUVGODEyRDY5QzhGNzVFMzI2Q0I3MEVBMDAwQzNGNzc2REZEQkQ2MDQ2MzhDMkVGNzE3RkMyNkQwMkUxNyIsInEiOiJFMjFFMDRGOTExRDFFRDc5OTEwMDhFQ0FBQjNCRjc3NTk4NDMwOUMzIiwiZyI6IkM1MkE0QTBGRjNCN0U2MUZERjE4NjdDRTg0MTM4MzY5QTYxNTRGNEFGQTkyOTY2RTNDODI3RTI1Q0ZBNkNGNTA4QjkwRTVERTQxOUUxMzM3RTA3QTJFOUUyQTNDRDVERUE3MDREMTc1RjhFQkY2QUYzOTdENjlFMTEwQjk2QUZCMTdDN0EwMzI1OTMyOUU0ODI5QjBEMDNCQkM3ODk2QjE1QjRBREU1M0UxMzA4NThDQzM0RDk2MjY5QUE4OTA0MUY0MDkxMzZDNzI0MkEzODg5NUM5RDVCQ0NBRDRGMzg5QUYxRDdBNEJEMTM5OEJEMDcyREZGQTg5NjIzMzM5N0EifSwicHJpbmNpcGFsIjp7ImVtYWlsIjoiMDFhNzk2OGNiNTIyNGNlZmJjMmQ5MDFjYzI4NjI2YmVAYXBpLmFjY291bnRzLmZpcmVmb3guY29tIn0sImlhdCI6MTU1OTgyOTQxNTk2OSwiZXhwIjoxNTU5ODUxMDI1OTY5LCJmeGEtZ2VuZXJhdGlvbiI6MTQ5NjA1OTU1ODg5MywiZnhhLWxhc3RBdXRoQXQiOjE1MzE3MjkzNjIsImZ4YS12ZXJpZmllZEVtYWlsIjoiMTUxNzE2ODM5NTNAMTYzLkNPTSIsImZ4YS1kZXZpY2VJZCI6ImZjM2M1ZmMzMjI5MDU2MDI1Yzc0NjNmMzYyODAxMjdlIiwiZnhhLXRva2VuVmVyaWZpZWQiOnRydWUsImZ4YS1hbXIiOlsicHdkIiwiZW1haWwiXSwiZnhhLWFhbCI6MSwiZnhhLXByb2ZpbGVDaGFuZ2VkQXQiOjE0OTYwNTk1NTg4OTMsImlzcyI6ImFwaS5hY2NvdW50cy5maXJlZm94LmNvbSJ9.cCCeVvblqNGC2CdmOTbdoGELUo5xn1IIH170feSiKAjHz85n67lC_G9UsjHXfcqkPCARymENp2swtcE-HOgat1ZhJNNRK9MP7IwDLly9RHkEbnFOp-pEiHQHtcieZwpnxwuzTTw7Ysi-g0YDTPqIzF-r3iYzvelbAUTwBPVofCbfglA5qkXnq0xHJX4DqlM-KuzFVT3sZXW4UlHHBXpkA8DrQ0XgS3WeBrnmH4mfF3H3SCf6NX1PPQ5m3pkF1k5zlmzcZ5nqa8iMxjAptWDGYFK3kegdq5zKqT_2vI9CW2xwQzvTo1nKWXoXu87iIhkoyM4AzQdM4LseB6_P37m-JQ~eyJhbGciOiJEUzEyOCJ9.eyJleHAiOjIzNDgyMzUxNzY3ODksImF1ZCI6Imh0dHBzOi8vb2F1dGguYWNjb3VudHMuZmlyZWZveC5jb20vdjEifQ==.smo6xiyeKpCmCqpdNCQlM3cQ_gw06D3UOGpf3AOk-Q4TtN8HSTzu4g==","response_type":"token"}
+1559835177568	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1559835177568	Services.Common.RESTRequest	DEBUG	POST request to https://oauth.accounts.firefox.com/v1/authorization
+1559835177568	Services.Common.RESTRequest	TRACE	HTTP Header accept: application/json
+1559835177568	Services.Common.RESTRequest	TRACE	HTTP Header content-type: application/json
+1559835177568	Services.Common.RESTRequest	DEBUG	POST Length: 2335
+1559835177568	Services.Common.RESTRequest	TRACE	POST Body: {"scope":"sync:addon_storage","client_id":"5882386c6d801776","assertion":"eyJhbGciOiJSUzI1NiJ9.eyJwdWJsaWMta2V5Ijp7ImFsZ29yaXRobSI6IkRTIiwieSI6IkNDQ0QzRjNGRTBGNzlERkY4QUNCMzEwNzJGRjg3ODkyNEEwRDlFNDBDRjNBQjExM0Q1ODcxN0MyOTUyQjg5RDBFN0MzOERBNTJBRTBGRUM0NzAxNkJFRDIxRDAzNjMzRUExMDFBOUIxODk5REQ0MkJCODhGNUEwM0I0ODg3RTY5REZDN0Y1Mjk4NTREMTBFN0VBMDdFRDAzMUM2ODZCMzkyQThCN0U1OUJGOUZDRjFCNDdCN0Y5NUJEMUE2NENFQzZCM0IxNDI4MDI1NTFFMTBGMDUxQzNEQTJGMjBENjYyOUM0QzYzRjJCMUY1MzFGNUEzNTZGREJBREUwQTVFNTIiLCJwIjoiRkY2MDA0ODNEQjZBQkZDNUI0NUVBQjc4NTk0QjM1MzNENTUwRDlGMUJGMkE5OTJBN0E4REFBNkRDMzRGODA0NUFENEU2RTBDNDI5RDMzNEVFRUFBRUZEN0UyM0Q0ODEwQkUwMEU0Q0MxNDkyQ0JBMzI1QkE4MUZGMkQ1QTVCMzA1QThEMTdFQjNCRjRBMDZBMzQ5RDM5MkUwMEQzMjk3NDRBNTE3OTM4MDM0NEU4MkExOEM0NzkzMzQzOEY4OTFFMjJBRUVGODEyRDY5QzhGNzVFMzI2Q0I3MEVBMDAwQzNGNzc2REZEQkQ2MDQ2MzhDMkVGNzE3RkMyNkQwMkUxNyIsInEiOiJFMjFFMDRGOTExRDFFRDc5OTEwMDhFQ0FBQjNCRjc3NTk4NDMwOUMzIiwiZyI6IkM1MkE0QTBGRjNCN0U2MUZERjE4NjdDRTg0MTM4MzY5QTYxNTRGNEFGQTkyOTY2RTNDODI3RTI1Q0ZBNkNGNTA4QjkwRTVERTQxOUUxMzM3RTA3QTJFOUUyQTNDRDVERUE3MDREMTc1RjhFQkY2QUYzOTdENjlFMTEwQjk2QUZCMTdDN0EwMzI1OTMyOUU0ODI5QjBEMDNCQkM3ODk2QjE1QjRBREU1M0UxMzA4NThDQzM0RDk2MjY5QUE4OTA0MUY0MDkxMzZDNzI0MkEzODg5NUM5RDVCQ0NBRDRGMzg5QUYxRDdBNEJEMTM5OEJEMDcyREZGQTg5NjIzMzM5N0EifSwicHJpbmNpcGFsIjp7ImVtYWlsIjoiMDFhNzk2OGNiNTIyNGNlZmJjMmQ5MDFjYzI4NjI2YmVAYXBpLmFjY291bnRzLmZpcmVmb3guY29tIn0sImlhdCI6MTU1OTgyOTQxNTk2OSwiZXhwIjoxNTU5ODUxMDI1OTY5LCJmeGEtZ2VuZXJhdGlvbiI6MTQ5NjA1OTU1ODg5MywiZnhhLWxhc3RBdXRoQXQiOjE1MzE3MjkzNjIsImZ4YS12ZXJpZmllZEVtYWlsIjoiMTUxNzE2ODM5NTNAMTYzLkNPTSIsImZ4YS1kZXZpY2VJZCI6ImZjM2M1ZmMzMjI5MDU2MDI1Yzc0NjNmMzYyODAxMjdlIiwiZnhhLXRva2VuVmVyaWZpZWQiOnRydWUsImZ4YS1hbXIiOlsicHdkIiwiZW1haWwiXSwiZnhhLWFhbCI6MSwiZnhhLXByb2ZpbGVDaGFuZ2VkQXQiOjE0OTYwNTk1NTg4OTMsImlzcyI6ImFwaS5hY2NvdW50cy5maXJlZm94LmNvbSJ9.cCCeVvblqNGC2CdmOTbdoGELUo5xn1IIH170feSiKAjHz85n67lC_G9UsjHXfcqkPCARymENp2swtcE-HOgat1ZhJNNRK9MP7IwDLly9RHkEbnFOp-pEiHQHtcieZwpnxwuzTTw7Ysi-g0YDTPqIzF-r3iYzvelbAUTwBPVofCbfglA5qkXnq0xHJX4DqlM-KuzFVT3sZXW4UlHHBXpkA8DrQ0XgS3WeBrnmH4mfF3H3SCf6NX1PPQ5m3pkF1k5zlmzcZ5nqa8iMxjAptWDGYFK3kegdq5zKqT_2vI9CW2xwQzvTo1nKWXoXu87iIhkoyM4AzQdM4LseB6_P37m-JQ~eyJhbGciOiJEUzEyOCJ9.eyJleHAiOjIzNDgyMzUxNzY3OTEsImF1ZCI6Imh0dHBzOi8vb2F1dGguYWNjb3VudHMuZmlyZWZveC5jb20vdjEifQ==.tWuHykcXl7nQz6k-AU3IB-EBLeYOE85S0gExPqgA3ygyUpSzf32Qmg==","response_type":"token"}
+1559835177569	FirefoxAccounts	TRACE	finished write of json user data - took: 5
+1559835177569	FirefoxAccounts	DEBUG	writing secure storage: ["kSync","kXCS","kExtSync","kExtKbHash"]
+1559835177569	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1559835177573	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1559835178491	Sync.Engine.Extension-Storage	ERROR	Syncing enhancerforyoutube@maximerf.addons.mozilla.org: request failed: Error: HTTP 401 Unauthorized: Missing Authorization Token (Please authenticate yourself to use this endpoint.)(resource://services-common/kinto-http-client.js:2645:5) JS Stack trace: ServerResponse@kinto-http-client.js:2645:5
+processResponse@kinto-http-client.js:2792:13
+1559835178491	Sync.Engine.Extension-Storage	INFO	Token might have expired
+1559835178491	FirefoxAccounts	DEBUG	getOAuthToken enter
+1559835178492	FirefoxAccounts	DEBUG	getOAuthToken fetching new token from: https://oauth.accounts.firefox.com/v1
+1559835178492	FirefoxAccounts	DEBUG	enter getAssertion()
+1559835178492	FirefoxAccounts	DEBUG	getKeypairAndCertificate: already have keyPair and certificate
+1559835178492	FirefoxAccounts	DEBUG	getAssertionFromCert
+1559835178492	FirefoxAccounts	DEBUG	getAssertionFromCert returning signed: true
+1559835178493	Services.Common.RESTRequest	DEBUG	POST request to https://oauth.accounts.firefox.com/v1/authorization
+1559835178493	Services.Common.RESTRequest	TRACE	HTTP Header accept: application/json
+1559835178493	Services.Common.RESTRequest	TRACE	HTTP Header content-type: application/json
+1559835178493	Services.Common.RESTRequest	DEBUG	POST Length: 2335
+1559835178493	Services.Common.RESTRequest	TRACE	POST Body: {"scope":"sync:addon_storage","client_id":"5882386c6d801776","assertion":"eyJhbGciOiJSUzI1NiJ9.eyJwdWJsaWMta2V5Ijp7ImFsZ29yaXRobSI6IkRTIiwieSI6IkNDQ0QzRjNGRTBGNzlERkY4QUNCMzEwNzJGRjg3ODkyNEEwRDlFNDBDRjNBQjExM0Q1ODcxN0MyOTUyQjg5RDBFN0MzOERBNTJBRTBGRUM0NzAxNkJFRDIxRDAzNjMzRUExMDFBOUIxODk5REQ0MkJCODhGNUEwM0I0ODg3RTY5REZDN0Y1Mjk4NTREMTBFN0VBMDdFRDAzMUM2ODZCMzkyQThCN0U1OUJGOUZDRjFCNDdCN0Y5NUJEMUE2NENFQzZCM0IxNDI4MDI1NTFFMTBGMDUxQzNEQTJGMjBENjYyOUM0QzYzRjJCMUY1MzFGNUEzNTZGREJBREUwQTVFNTIiLCJwIjoiRkY2MDA0ODNEQjZBQkZDNUI0NUVBQjc4NTk0QjM1MzNENTUwRDlGMUJGMkE5OTJBN0E4REFBNkRDMzRGODA0NUFENEU2RTBDNDI5RDMzNEVFRUFBRUZEN0UyM0Q0ODEwQkUwMEU0Q0MxNDkyQ0JBMzI1QkE4MUZGMkQ1QTVCMzA1QThEMTdFQjNCRjRBMDZBMzQ5RDM5MkUwMEQzMjk3NDRBNTE3OTM4MDM0NEU4MkExOEM0NzkzMzQzOEY4OTFFMjJBRUVGODEyRDY5QzhGNzVFMzI2Q0I3MEVBMDAwQzNGNzc2REZEQkQ2MDQ2MzhDMkVGNzE3RkMyNkQwMkUxNyIsInEiOiJFMjFFMDRGOTExRDFFRDc5OTEwMDhFQ0FBQjNCRjc3NTk4NDMwOUMzIiwiZyI6IkM1MkE0QTBGRjNCN0U2MUZERjE4NjdDRTg0MTM4MzY5QTYxNTRGNEFGQTkyOTY2RTNDODI3RTI1Q0ZBNkNGNTA4QjkwRTVERTQxOUUxMzM3RTA3QTJFOUUyQTNDRDVERUE3MDREMTc1RjhFQkY2QUYzOTdENjlFMTEwQjk2QUZCMTdDN0EwMzI1OTMyOUU0ODI5QjBEMDNCQkM3ODk2QjE1QjRBREU1M0UxMzA4NThDQzM0RDk2MjY5QUE4OTA0MUY0MDkxMzZDNzI0MkEzODg5NUM5RDVCQ0NBRDRGMzg5QUYxRDdBNEJEMTM5OEJEMDcyREZGQTg5NjIzMzM5N0EifSwicHJpbmNpcGFsIjp7ImVtYWlsIjoiMDFhNzk2OGNiNTIyNGNlZmJjMmQ5MDFjYzI4NjI2YmVAYXBpLmFjY291bnRzLmZpcmVmb3guY29tIn0sImlhdCI6MTU1OTgyOTQxNTk2OSwiZXhwIjoxNTU5ODUxMDI1OTY5LCJmeGEtZ2VuZXJhdGlvbiI6MTQ5NjA1OTU1ODg5MywiZnhhLWxhc3RBdXRoQXQiOjE1MzE3MjkzNjIsImZ4YS12ZXJpZmllZEVtYWlsIjoiMTUxNzE2ODM5NTNAMTYzLkNPTSIsImZ4YS1kZXZpY2VJZCI6ImZjM2M1ZmMzMjI5MDU2MDI1Yzc0NjNmMzYyODAxMjdlIiwiZnhhLXRva2VuVmVyaWZpZWQiOnRydWUsImZ4YS1hbXIiOlsicHdkIiwiZW1haWwiXSwiZnhhLWFhbCI6MSwiZnhhLXByb2ZpbGVDaGFuZ2VkQXQiOjE0OTYwNTk1NTg4OTMsImlzcyI6ImFwaS5hY2NvdW50cy5maXJlZm94LmNvbSJ9.cCCeVvblqNGC2CdmOTbdoGELUo5xn1IIH170feSiKAjHz85n67lC_G9UsjHXfcqkPCARymENp2swtcE-HOgat1ZhJNNRK9MP7IwDLly9RHkEbnFOp-pEiHQHtcieZwpnxwuzTTw7Ysi-g0YDTPqIzF-r3iYzvelbAUTwBPVofCbfglA5qkXnq0xHJX4DqlM-KuzFVT3sZXW4UlHHBXpkA8DrQ0XgS3WeBrnmH4mfF3H3SCf6NX1PPQ5m3pkF1k5zlmzcZ5nqa8iMxjAptWDGYFK3kegdq5zKqT_2vI9CW2xwQzvTo1nKWXoXu87iIhkoyM4AzQdM4LseB6_P37m-JQ~eyJhbGciOiJEUzEyOCJ9.eyJleHAiOjIzNDgyMzUxNzc3MTcsImF1ZCI6Imh0dHBzOi8vb2F1dGguYWNjb3VudHMuZmlyZWZveC5jb20vdjEifQ==.TCTNBynnCCzps_0mRPhivGRNL5uyKsceWX0elKWtcQBReUO_EouG2w==","response_type":"token"}
+1559835178704	Services.Common.RESTRequest	TRACE	onStartRequest: POST https://oauth.accounts.firefox.com/v1/authorization
+1559835178704	Services.Common.RESTRequest	TRACE	Channel for POST https://oauth.accounts.firefox.com/v1/authorization returned status code 0
+1559835178704	Services.Common.RESTRequest	DEBUG	POST https://oauth.accounts.firefox.com/v1/authorization 200
+1559835178705	FirefoxAccounts	DEBUG	_updateAccountData with items: ["oauthTokens"]
+1559835178705	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified","oauthTokens","profileCache","device"]
+1559835178705	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified","oauthTokens","profileCache","device"]
+1559835178707	FirefoxAccounts	TRACE	finished write of json user data - took: 2
+1559835178708	FirefoxAccounts	DEBUG	writing secure storage: ["kSync","kXCS","kExtSync","kExtKbHash"]
+1559835178708	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1559835178712	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1559835178905	Services.Common.RESTRequest	TRACE	onStartRequest: POST https://oauth.accounts.firefox.com/v1/destroy
+1559835178906	Services.Common.RESTRequest	TRACE	Channel for POST https://oauth.accounts.firefox.com/v1/destroy returned status code 0
+1559835178906	Services.Common.RESTRequest	DEBUG	POST https://oauth.accounts.firefox.com/v1/destroy 200
+1559835178955	Services.Common.RESTRequest	TRACE	onStartRequest: POST https://oauth.accounts.firefox.com/v1/authorization
+1559835178955	Services.Common.RESTRequest	TRACE	Channel for POST https://oauth.accounts.firefox.com/v1/authorization returned status code 0
+1559835178955	Services.Common.RESTRequest	DEBUG	POST https://oauth.accounts.firefox.com/v1/authorization 200
+1559835178955	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1559835178955	FirefoxAccounts	DEBUG	Detected a race for this token - revoking the new one.
+1559835178955	FirefoxAccounts	DEBUG	FxAccountsOAuthGrantClient Initialized
+1559835178956	Services.Common.RESTRequest	DEBUG	POST request to https://oauth.accounts.firefox.com/v1/destroy
+1559835178956	Services.Common.RESTRequest	TRACE	HTTP Header accept: application/json
+1559835178956	Services.Common.RESTRequest	TRACE	HTTP Header content-type: application/json
+1559835178956	Services.Common.RESTRequest	DEBUG	POST Length: 76
+1559835178956	Services.Common.RESTRequest	TRACE	POST Body: {"token":"96c365cbb34e0530a8249bf87f820ff90b9c69b272f9d60607dc5b772e8d5ee0"}
+1559835180040	Services.Common.RESTRequest	TRACE	onStartRequest: POST https://oauth.accounts.firefox.com/v1/authorization
+1559835180040	Services.Common.RESTRequest	TRACE	Channel for POST https://oauth.accounts.firefox.com/v1/authorization returned status code 0
+1559835180040	Services.Common.RESTRequest	DEBUG	POST https://oauth.accounts.firefox.com/v1/authorization 200
+1559835180040	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1559835180040	FirefoxAccounts	DEBUG	Detected a race for this token - revoking the new one.
+1559835180040	FirefoxAccounts	DEBUG	FxAccountsOAuthGrantClient Initialized
+1559835180040	Services.Common.RESTRequest	DEBUG	POST request to https://oauth.accounts.firefox.com/v1/destroy
+1559835180040	Services.Common.RESTRequest	TRACE	HTTP Header accept: application/json
+1559835180041	Services.Common.RESTRequest	TRACE	HTTP Header content-type: application/json
+1559835180041	Services.Common.RESTRequest	DEBUG	POST Length: 76
+1559835180041	Services.Common.RESTRequest	TRACE	POST Body: {"token":"40dcc1c42594a6efc7186114f3bc7753ca6b2e2cee371e4b7c785df514ba0f4d"}
+1559835180384	Services.Common.RESTRequest	TRACE	onStartRequest: POST https://oauth.accounts.firefox.com/v1/destroy
+1559835180385	Services.Common.RESTRequest	TRACE	Channel for POST https://oauth.accounts.firefox.com/v1/destroy returned status code 0
+1559835180385	Services.Common.RESTRequest	DEBUG	POST https://oauth.accounts.firefox.com/v1/destroy 200
+1559835180846	Services.Common.RESTRequest	TRACE	onStartRequest: POST https://oauth.accounts.firefox.com/v1/destroy
+1559835180846	Services.Common.RESTRequest	TRACE	Channel for POST https://oauth.accounts.firefox.com/v1/destroy returned status code 0
+1559835180846	Services.Common.RESTRequest	DEBUG	POST https://oauth.accounts.firefox.com/v1/destroy 200
+1559835180920	Sync.Doctor	INFO	Skipping check of prefs - disabled via preferences
+1559835180920	Sync.Doctor	INFO	Skipping check of passwords - disabled via preferences
+1559835180920	Sync.Doctor	INFO	Skipping check of tabs - disabled via preferences
+1559835180920	Sync.Doctor	INFO	Skipping check of bookmarks - disabled via preferences
+1559835180920	Sync.Doctor	INFO	Skipping check of addons - disabled via preferences
+1559835180920	Sync.Doctor	INFO	Skipping check of forms - disabled via preferences
+1559835180920	Sync.Doctor	INFO	Skipping check of history - disabled via preferences
+1559835180920	Sync.Doctor	INFO	Skipping check of extension-storage - disabled via preferences
+1559835180920	Sync.Doctor	INFO	Skipping validation: no engines qualify
+1559835180920	Sync.Status	DEBUG	Status.sync: success.sync => success.sync
+1559835180920	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1559835180921	Sync.Synchronizer	INFO	Sync completed at 2019-06-06 23:33:00 after 10.54 secs.
+1559835180921	Sync.Declined	DEBUG	Handling remote declined: []
+1559835180921	Sync.Declined	DEBUG	Handling local declined: []
+1559835180921	Sync.Declined	DEBUG	Declined changed? false
+1559835180922	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1559835180923	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
