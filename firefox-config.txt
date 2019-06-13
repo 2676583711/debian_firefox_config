@@ -1,0 +1,7 @@
+
+
+/home/zhou/.mozilla
+		/home/zhou/.mozilla/extensions
+		/home/zhou/.mozilla/firefox
+		/home/zhou/.mozilla/firefox-config.txt
+		/home/zhou/.mozilla/systemextensionsdev
